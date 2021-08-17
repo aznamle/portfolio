@@ -1,0 +1,23 @@
+{
+    "headtitle": "Home | Test",
+    "hero": {
+        "hero_title": "Hello, ...",
+        "hero_description": "Description...",
+    },
+    "projects": {
+        "title": "Projects",
+        "description": "Description...",
+        "project_title1": {
+            "subtitle": "...subtitle",
+            "description": "Description",
+        },
+        "project_title2": {
+            "subtitle": "...subtitle",
+            "description": "Description",
+        },
+        "project_title3": {
+            "subtitle": "...subtitle",
+            "description": "Description",
+        },
+    }
+}
