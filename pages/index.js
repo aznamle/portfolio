@@ -1,9 +1,16 @@
+import React, { useState } from 'react'
+
+
 import Head from 'next/head'
 import Image from 'next/image'
 
 import Intro from '../components/Intro'
+import Modal from '../components/Modal'
 
 export default function Home() {
+
+  const [open, setOpen] = useState(false)
+
   return (
     <div className=''>
       <Head>
@@ -13,7 +20,9 @@ export default function Home() {
       </Head>
 
       <Intro />
+      <button onClick={()=> setOpen(true)}>hello</button>
 
+      { <Modal open={open} setOpen={setOpen}/>}
     </div>
   )
 }
