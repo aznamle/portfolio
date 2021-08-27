@@ -1,23 +1,12 @@
 import React, { useState, useMemo } from 'react'
 import ProjectModal from './ProjectModal'
 
-const Project = () => {
+import useSWR from 'swr'
+
+const Project = ({ project }) => {
 
     const [open, setOpen] = useState(false)
-    const [viewProject, setViewProject] = useState(null)
-
-    const project = [
-        {
-            id: 1,
-            title: "title1",
-            description: "des1"
-        },
-        {
-            id: 2,
-            title: "title2",
-            description: "des2"
-        },
-    ]
+    const [viewProject, setViewProject] = useState([])
 
     const openProject = item => {
         setViewProject(item)
@@ -25,7 +14,7 @@ const Project = () => {
     }
 
     return (
-        <div className='text-white'>
+        <div className='items-center text-white'>
             {project.map(item => (
                 <div key={item.id}>
                     {item.title}

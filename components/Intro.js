@@ -5,7 +5,7 @@ const Intro = () => {
     return (
         <div className='flex container mx-auto max-w-3xl py-24 text-white'>
             <div className='w-1/3 rounded-full'>
-                <img src='/public/robot2.png' />
+                {/* <Image src='/public/robot2.png' alt='profile image' layout='fill' /> */}
             </div>
             
             <div className='w-2/3 px-12'>
