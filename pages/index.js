@@ -6,6 +6,7 @@ import Image from 'next/image'
 
 import Intro from '../components/Intro'
 import Modal from '../components/Modal'
+import Project from '../components/Projects/Project'
 
 import { profile } from '../public/data/common'
 
@@ -21,10 +22,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Project />
       <Intro />
-      <button className='bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded' onClick={()=> setOpen(true)}>hello</button>
-
-      { <Modal open={open} setOpen={setOpen}/>}
     </div>
   )
 }
