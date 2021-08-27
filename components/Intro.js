@@ -4,8 +4,8 @@ import Image from 'next/image'
 const Intro = () => {
     return (
         <div className='flex container mx-auto max-w-3xl py-24 text-white'>
-            <div className='w-1/3 rounded-full'>
-                {/* <Image src='/public/robot2.png' alt='profile image' layout='fill' /> */}
+            <div className='w-1/3'>
+                <Image className='rounded-full' src='/robot2.png' alt='profile image' width={250} height={250} />
             </div>
             
             <div className='w-2/3 px-12'>

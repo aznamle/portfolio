@@ -48,6 +48,9 @@ const ProjectModal = ({ open, setOpen, item }) => {
                                     {item.description}
                                 </p>
                                 </div>
+                                <div className='p-12'>
+                                    <img src='http://localhost:3000/carbnforme.jpg' />
+                                </div>
                             </div>
                         </div>
                     </div>
