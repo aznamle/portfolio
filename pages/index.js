@@ -7,6 +7,8 @@ import Image from 'next/image'
 import Intro from '../components/Intro'
 import Modal from '../components/Modal'
 
+import { profile } from '../public/data/common'
+
 export default function Home() {
 
   const [open, setOpen] = useState(false)
