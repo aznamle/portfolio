@@ -9,7 +9,7 @@ import Project from '../components/Projects/Project'
 
 import { profile } from '../public/data/common'
 
-export default function Home({data}) {
+export default function Home({ data }) {
 
   return (
     <div className=''>
