@@ -14,11 +14,13 @@ const Project = ({ project }) => {
     }
 
     return (
-        <div className='items-center text-white'>
+        <div className='text-white'>
             {project.map(item => (
-                <div key={item.id}>
+                <div className='flex mx-auto justify-center' key={item.id}>
                     {item.title}
-                    <button onClick={() => openProject(item)}>View</button>
+                    <div>
+                        <button onClick={() => openProject(item)}>View</button>
+                    </div>
                 </div>
             ))}
             { <ProjectModal open={open} setOpen={setOpen} item={viewProject} /> }

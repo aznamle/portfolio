@@ -18,7 +18,7 @@ const ProjectModal = ({ open, setOpen, item }) => {
                     leaveFrom="opacity-100"
                     leaveTo="opacity-0"
                 >
-                    <Dialog.Overlay className="fixed inset-0 bg-gray-800 bg-opacity-75 transition-opacity" />
+                    <Dialog.Overlay className="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity" />
                 </Transition.Child>
 
                 {/* This element is to trick the browser into centering the setOpen contents. */}
@@ -34,7 +34,7 @@ const ProjectModal = ({ open, setOpen, item }) => {
                     leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                     leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                 >
-                    <div className="inline-block align-bottom bg-black rounded-lg border border-gray-600 text-left overflow-hidden shadow-xl transform transition-all sm:my-24 sm:align-bottom h-full sm:max-w-4xl sm:w-full">
+                    <div className="inline-block align-bottom bg-black rounded-lg border border-gray-700 text-left overflow-hidden shadow-xl transform transition-all sm:my-24 sm:align-bottom h-full sm:max-w-4xl sm:w-full">
                         <div className="bg-black px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                             <div className="sm:flex sm:items-start">
                             <div className="mx-auto flex-shrink-0 flex items-center justify-center h-24 w-24 rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
