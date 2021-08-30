@@ -1,4 +1,5 @@
-const project = [
+const projects = [
+
     {
         id: 1,
         title: "title1",
@@ -12,5 +13,5 @@ const project = [
 ]
 
 export default function handler(req, res) {
-    res.status(200).json(project)
+    res.status(200).json(projects)
 }

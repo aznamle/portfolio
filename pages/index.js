@@ -9,7 +9,7 @@ import Project from '../components/Projects/Project'
 
 import { profile } from '../public/data/common'
 
-export default function Home({ data }) {
+export default function Home({ projects }) {
 
   return (
     <div className=''>
@@ -19,21 +19,28 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Intro />
-      <Project project={data} />
+      <Project project={projects} />
     </div>
   )
 }
 
 
 export async function getServerSideProps() {
-  const res = await fetch('http://localhost:3000/api/data')
-  const data = await res.json()
+  const [projectsRes, aboutRes] = await Promise.all([
+    fetch('http://localhost:3000/api/projects'),
+    fetch('http://localhost:3000/api/about')
+  ])
   
+  const [projects, about] = await Promise.all([
+    projectsRes.json(),
+    aboutRes.json()
+  ])
   
 
   return {
       props: {
-          data
+          projects,
+          about
       },
   }
 }
