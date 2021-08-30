@@ -16,7 +16,7 @@ const Project = ({ project }) => {
     return (
         <div className='text-white'>
             {project.map(item => (
-                <div className='flex mx-auto justify-center' key={item.id}>
+                <div className='text-center mx-auto justify-center' key={item.id}>
                     {item.title}
                     <div>
                         <button onClick={() => openProject(item)}>View</button>

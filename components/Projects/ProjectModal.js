@@ -29,14 +29,14 @@ const ProjectModal = ({ open, setOpen, item }) => {
                 <Transition.Child
                     as={Fragment}
                     enter="ease-in-out duration-300"
-                    enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-100"
+                    enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                     enterTo="opacity-100 translate-y-0 sm:scale-100"
                     leave="ease-out duration-200"
                     leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                     leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                 >
                     <div className="inline-block align-bottom bg-black rounded-lg border border-gray-600 text-left overflow-hidden shadow-xl transform transition-all sm:my-24 sm:align-bottom max-h-4/5 overflow-y-auto sm:max-w-4xl sm:w-full">
-                        <div className="bg-black px-4 pt-0 pb-4 sm:p-6 sm:pb-4">
+                        <div className="bg-black px-4 pt-0 pb-4 sm:p-6 sm:pb-4 ">
                         <div className='flex flex-row-reverse'>
                             <button className="text-gray-400 hover:text-gray-700 p-1 transform ease-in-out duration-300" onClick={() => setOpen(false)}>
                                 <svg
@@ -68,17 +68,16 @@ const ProjectModal = ({ open, setOpen, item }) => {
                                     {item.description}
                                 </p>
                                 </div>
-                                <div className='p-12'>
-                                    <img src='http://localhost:3000/carbnforme.jpg' />
+                                <div className='p-6'>
+                                    <img className='rounded-md' src='http://localhost:3000/carbnforme.jpg' />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="px-4 py-3 sm:px-6 sm:flex">
                         <button
-                        type="button"
-                        className="w-full inline-flex justify-center rounded-md border border-white text-white shadow-sm px-4 py-2 bg-transparent text-base font-medium hover:text-black hover:bg-white sm:ml-3 sm:w-auto sm:text-sm"
-                        onClick={() => setOpen(false)}
+                            type="button"
+                            className="w-full inline-flex justify-center rounded-md border border-white text-white shadow-sm px-4 py-2 bg-transparent text-base font-medium hover:text-black hover:bg-white sm:ml-3 sm:w-auto sm:text-sm"
                         >
                         close
                         </button>
