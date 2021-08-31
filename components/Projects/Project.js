@@ -12,13 +12,20 @@ const Project = ({ project }) => {
     }
 
     return (
-        <div className='mx-auto max-w-2xl grid grid-cols-2 gap-4 py-12 text-white'>
+        <div className='mx-auto max-w-3xl grid grid-cols-2 gap-4 py-12 text-white'>
             {project.map(item => (
-                <div className='flex space-x-4 text-center mx-auto justify-center space-y-2 border-b pb-4 border-opacity-50' key={item.id}>
-                    {item.title}
+                <div className='flex items-center text-center mx-auto justify-center border-b pb-4 border-opacity-50' key={item.id}>
+                    <div>
+                        <h1 className='text-xl'>
+                            {item.title}
+                        </h1>
+                        <p className='text-gray-400'>
+                            {item.description}
+                        </p>
+                    </div>
                     <div>
                         <button 
-                            className='bg-gray-700 border-white transition ease-in-out duration-300 hover:bg-gray-800 py-1 px-3 rounded-3xl' 
+                            className='bg-gray-700 border-white transition ease-in-out duration-300 hover:bg-gray-800 py-2 px-4 rounded-3xl ml-12' 
                             onClick={() => openProject(item)}
                         >
                             View

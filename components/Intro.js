@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Intro = ({ about }) => {
     return (
-        <div className='md:flex mx-auto md:max-w-4xl sm:items-center px-12 md:py-24 text-white space-y-6 md:space-y-0'>
+        <div className='md:flex mx-auto md:max-w-4xl items-center px-12 md:py-24 text-white space-y-6 md:space-y-0'>
             <div className='md:w-1/3 items-center'>
                 <Image className='rounded-full' src='/robot2.png' alt='profile image' width={250} height={250} />
             </div>

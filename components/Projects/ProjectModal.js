@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useRef } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
 
-const ProjectModal = ({ open, setOpen, item }) => {
+const ProjectModal = ({ open, setOpen, item, technology }) => {
 
     const cancelButtonRef = useRef(null)
 
@@ -62,7 +62,11 @@ const ProjectModal = ({ open, setOpen, item }) => {
                                 <Dialog.Title as="h3" className="text-lg leading-6 font-medium text-white">
                                     {item.title}
                                 </Dialog.Title>
-                                
+                                {/* {item.technology.map((tech, index) => (
+                                    <div key={index} className='rounded-md border border-white text-white shadow-sm px-4 py-2'>
+                                        {tech}
+                                    </div>
+                                ))} */}
                                 <div className="mt-2">
                                 <p className="text-sm text-white">
                                     {item.description}
