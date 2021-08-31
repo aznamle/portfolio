@@ -38,7 +38,7 @@ const ProjectModal = ({ open, setOpen, item }) => {
                     <div className="inline-block align-bottom bg-black rounded-lg border border-gray-600 text-left overflow-hidden shadow-xl transform transition-all sm:my-24 sm:align-bottom max-h-4/5 overflow-y-auto sm:max-w-4xl sm:w-full">
                         <div className="bg-black px-4 pt-0 pb-4 sm:p-6 sm:pb-4 ">
                         <div className='flex flex-row-reverse'>
-                            <button className="text-gray-400 hover:text-gray-700 p-1 transform ease-in-out duration-300" onClick={() => setOpen(false)}>
+                            <button className="text-gray-200 hover:text-gray-500 p-1 transform ease-in-out duration-300" onClick={() => setOpen(false)}>
                                 <svg
                                 className="w-8 h-8"
                                 fill="none"
@@ -47,9 +47,9 @@ const ProjectModal = ({ open, setOpen, item }) => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 >
                                 <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="1"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="1"
                                     d="M6 18L18 6M6 6l12 12"
                                 ></path>
                                 </svg>
