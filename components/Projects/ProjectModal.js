@@ -40,11 +40,11 @@ const ProjectModal = ({ open, setOpen, item }) => {
                         <div className='flex flex-row-reverse'>
                             <button className="text-gray-200 hover:text-gray-500 p-1 transform ease-in-out duration-300" onClick={() => setOpen(false)}>
                                 <svg
-                                className="w-8 h-8"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
+                                    className="w-8 h-8"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
                                 >
                                 <path
                                     strokeLinecap="round"

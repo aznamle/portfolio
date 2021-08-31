@@ -10,6 +10,16 @@ const projects = [
         title: "title2",
         description: "des2"
     },
+    {
+        id: 3,
+        title: "title3",
+        description: "des3"
+    },
+    {
+        id: 3,
+        title: "title3",
+        description: "des3"
+    },
 ]
 
 export default function handler(req, res) {
