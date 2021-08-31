@@ -59,16 +59,18 @@ const ProjectModal = ({ open, setOpen, item, technology }) => {
                             <div className="mx-auto flex-shrink-0 flex items-center justify-center h-24 w-24 rounded-md bg-white sm:mx-0 sm:h-12 sm:w-12">
                             </div>
                             <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                                <Dialog.Title as="h3" className="text-lg leading-6 font-medium text-white">
+                                <Dialog.Title as="h3" className="text-xl leading-6 font-medium text-white">
                                     {item.title}
                                 </Dialog.Title>
-                                {/* {item.technology.map((tech, index) => (
-                                    <div key={index} className='rounded-md border border-white text-white shadow-sm px-4 py-2'>
+                                <div className='flex mx-auto text-center space-x-2 py-4'>
+                                {technology.map((tech, index) => (
+                                    <div key={index} className='rounded-xl border border-opacity-50 text-white shadow-sm px-3 py-2 '>
                                         {tech}
                                     </div>
-                                ))} */}
+                                ))}
+                                </div>
                                 <div className="mt-2">
-                                <p className="text-sm text-white">
+                                <p className="text-gray-300">
                                     {item.description}
                                 </p>
                                 </div>

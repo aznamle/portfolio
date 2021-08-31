@@ -5,9 +5,11 @@ const Project = ({ project }) => {
 
     const [open, setOpen] = useState(false)
     const [viewProject, setViewProject] = useState([])
+    const [technology, setTechnology] = useState([])
 
     const openProject = item => {
         setViewProject(item)
+        setTechnology(item.technology)
         setOpen(true)
     }
 
@@ -33,7 +35,7 @@ const Project = ({ project }) => {
                     </div>
                 </div>
             ))}
-            { <ProjectModal open={open} setOpen={setOpen} item={viewProject} /> }
+            { <ProjectModal open={open} setOpen={setOpen} item={viewProject} technology={technology} /> }
 
         </div>
     )
