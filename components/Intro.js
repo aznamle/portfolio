@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 
 const Intro = ({ about }) => {
-    console.log(about)
     return (
         <div className='flex container mx-auto max-w-3xl py-24 text-white'>
             <div className='w-1/3'>

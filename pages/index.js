@@ -1,13 +1,9 @@
 import React from 'react'
 
-
 import Head from 'next/head'
-import Image from 'next/image'
 
 import Intro from '../components/Intro'
 import Project from '../components/Projects/Project'
-
-import { profile } from '../public/data/common'
 
 export default function Home({ about, projects }) {
 
@@ -26,9 +22,12 @@ export default function Home({ about, projects }) {
 
 
 export async function getServerSideProps() {
+
+  const API = 'https://namnomdev.vercel.app'
+
   const [projectsRes, aboutRes] = await Promise.all([
-    fetch('http://localhost:3000/api/projects'),
-    fetch('http://localhost:3000/api/about')
+    fetch('https://namnomdev.vercel.app/api/projects'),
+    fetch('https://namnomdev.vercel.app/api/about')
   ])
   
   const [projects, about] = await Promise.all([
