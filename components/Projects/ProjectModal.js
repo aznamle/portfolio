@@ -75,8 +75,8 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                                 </p>
                                 </div>
                                 {images.map((image, index) =>
-                                    <div className='p-6'>
-                                        <img className='rounded-md' src={image} />
+                                    <div key={index} className='p-6'>
+                                        <Image className='rounded-md' src={image} alt="image" width={1280} height={720} />
                                     </div>
                                 )}
                             </div>
