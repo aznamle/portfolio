@@ -3,6 +3,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import Intro from '../components/Intro'
+import Skills from '../components/Skills'
 import Project from '../components/Projects/Project'
 
 export default function Home({ about, projects }) {
@@ -15,6 +16,7 @@ export default function Home({ about, projects }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Intro about={about[0]} />
+      <Skills />
       <Project project={projects} />
     </div>
   )
@@ -26,8 +28,8 @@ export async function getServerSideProps() {
   const API = 'https://namnomdev.vercel.app'
 
   const [projectsRes, aboutRes] = await Promise.all([
-    fetch('https://namnomdev.vercel.app/api/projects'),
-    fetch('https://namnomdev.vercel.app/api/about')
+    fetch('https://namnomdev.vercel.app/projects'),
+    fetch('https://namnomdev.vercel.app/about')
   ])
   
   const [projects, about] = await Promise.all([
