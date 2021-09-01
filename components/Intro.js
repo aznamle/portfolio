@@ -10,8 +10,7 @@ const Intro = ({ about }) => {
                     <Image className='rounded-full' src='/robot2.png' alt='profile image' width={250} height={250} />
                 </div>
                 
-                <div className='md:w-3/4 md:ml-12 space-y-2'>
-                    {/* <span className='text-2xl'>{about.intro}</span> */}
+                <div className='md:w-3/4 md:ml-12 space-y-4'>
                     <h1 className='text-5xl font-semibold'>
                         {about.name}
                     </h1>

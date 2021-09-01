@@ -2,10 +2,11 @@ const projects = [
 
     {
         id: 1,
-        title: "title1",
+        title: "Carbnforme",
         subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
-        description: "des1",
+        description: "Carbnforme",
         technology: ["NextJS", "Prismic", "TailwindCSS"],
+        images: ["/projects/carbnforme/carbnforme.jpg", ]
     },
     {
         id: 2,
@@ -13,6 +14,8 @@ const projects = [
         subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
         description: "des2",
         technology: ["NextJS", "Prismic", "TailwindCSS"],
+        images: ["", ]
+
     },
     {
         id: 3,
@@ -20,6 +23,8 @@ const projects = [
         subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
         description: "des3",
         technology: ["NextJS", "Prismic", "TailwindCSS"],
+        images: ["", ]
+
     },
     {
         id: 3,
@@ -27,6 +32,7 @@ const projects = [
         subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
         description: "des3",
         technology: ["NextJS", "Prismic", "TailwindCSS"],
+        images: ["", ]
     },
 ]
 

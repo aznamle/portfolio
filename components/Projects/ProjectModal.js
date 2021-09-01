@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useRef } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
 
-const ProjectModal = ({ open, setOpen, item, technology }) => {
+const ProjectModal = ({ open, setOpen, item, technology, images }) => {
 
     const cancelButtonRef = useRef(null)
 
@@ -74,9 +74,11 @@ const ProjectModal = ({ open, setOpen, item, technology }) => {
                                     {item.description}
                                 </p>
                                 </div>
-                                <div className='p-6'>
-                                    <img className='rounded-md' src='http://localhost:3000/carbnforme.jpg' />
-                                </div>
+                                {images.map((image, index) =>
+                                    <div className='p-6'>
+                                        <img className='rounded-md' src={image} />
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </div>

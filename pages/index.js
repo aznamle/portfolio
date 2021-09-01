@@ -6,7 +6,7 @@ import Intro from '../components/Intro'
 import Skills from '../components/Skills'
 import Project from '../components/Projects/Project'
 
-export default function Home({ about, projects }) {
+export default function Home({ about, projects, skills }) {
 
   return (
     <div className=''>
@@ -16,7 +16,7 @@ export default function Home({ about, projects }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Intro about={about[0]} />
-      <Skills />
+      <Skills skills={skills} />
       <Project project={projects} />
     </div>
   )
@@ -27,21 +27,25 @@ export async function getServerSideProps() {
 
   const API = 'https://namnomdev.vercel.app'
 
-  const [projectsRes, aboutRes] = await Promise.all([
-    fetch('https://namnomdev.vercel.app/projects'),
-    fetch('https://namnomdev.vercel.app/about')
+  const [projectsRes, aboutRes, skillsRes] = await Promise.all([
+    fetch('https://namnomdev.vercel.app/api/projects'),
+    fetch('https://namnomdev.vercel.app/api/about'),
+    fetch('https://namnomdev.vercel.app/api/skills')
   ])
   
-  const [projects, about] = await Promise.all([
+  const [projects, about, skills] = await Promise.all([
     projectsRes.json(),
-    aboutRes.json()
+    aboutRes.json(),
+    skillsRes.json(),
+
   ])
   
 
   return {
       props: {
           projects,
-          about
+          about,
+          skills,
       },
   }
 }

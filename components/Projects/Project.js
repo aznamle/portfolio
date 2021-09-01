@@ -6,10 +6,12 @@ const Project = ({ project }) => {
     const [open, setOpen] = useState(false)
     const [viewProject, setViewProject] = useState([])
     const [technology, setTechnology] = useState([])
+    const [images, setImages] = useState([])
 
     const openProject = item => {
         setViewProject(item)
         setTechnology(item.technology)
+        setImages(item.images)
         setOpen(true)
     }
 
@@ -41,7 +43,7 @@ const Project = ({ project }) => {
                         </div>
                     </div>
                 ))}
-                { <ProjectModal open={open} setOpen={setOpen} item={viewProject} technology={technology} /> }
+                { <ProjectModal open={open} setOpen={setOpen} item={viewProject} technology={technology} images={images} /> }
             </div>
         </div>
     )
