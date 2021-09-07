@@ -5,7 +5,7 @@ import Skills from './Skills'
 const Intro = ({ about }) => {
     return (
         <div>
-            <div className='md:flex mx-auto md:max-w-5xl items-center space-x-8 px-8 md:px-0 py-12 md:py-24 text-white space-y-6 md:space-y-0'>
+            <div className='md:flex mx-auto md:max-w-5xl items-center px-4 md:px-0 py-12 md:py-24 text-white space-y-6 md:space-y-0'>
                 <div className='md:w-1/4 items-center'>
                     <Image className='rounded-full' src='/robot2.png' alt='profile image' width={250} height={250} />
                 </div>
