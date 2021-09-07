@@ -28,7 +28,7 @@ export async function getServerSideProps() {
   const API = 'https://namnomdev.vercel.app'
 
   const [projectsRes, aboutRes, skillsRes] = await Promise.all([
-    fetch('https://namnomdev.vercel.app/api/projects'),
+    fetch('http://localhost:3000/api/projects'),
     fetch('https://namnomdev.vercel.app/api/about'),
     fetch('https://namnomdev.vercel.app/api/skills')
   ])

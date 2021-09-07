@@ -2,8 +2,9 @@ import React, { Fragment, useEffect, useRef } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
 
-const ProjectModal = ({ open, setOpen, item, technology, images }) => {
 
+const ProjectModal = ({ open, setOpen, item, technology, images }) => {
+      
     const cancelButtonRef = useRef(null)
 
     return (
@@ -75,11 +76,11 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                                 </p>
                                 </div>
                                 {images.map((image, index) =>
-                                    <div key={index} className='p-6'>
+                                    <div key={index} className='py-4'>
                                         <Image className='rounded-md' src={image} alt="image" width={1280} height={720} />
                                     </div>
-                                )}
-                            </div>
+                                )}                        
+                                </div>
                         </div>
                     </div>
                     <div className="px-4 py-3 sm:px-6 sm:flex">
