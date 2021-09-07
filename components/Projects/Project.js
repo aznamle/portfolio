@@ -17,8 +17,8 @@ const Project = ({ project }) => {
 
     return (
         <div className='mx-auto max-w-5xl space-y-8 px-4 md:px-0 py-12'>
-            <h1 className='text-gray-100 text-3xl font-bold'>Projects</h1>
-            <div className='mx-auto grid md:grid-cols-2 gap-10 px-8 md:px-0 text-white'>
+            <h1 className='text-gray-900 dark:text-gray-100 text-3xl font-bold'>Projects</h1>
+            <div className='mx-auto grid md:grid-cols-2 gap-10 px-8 md:px-0 text-gray-900 dark:text-white'>
                 {project.map(item => (
                     <div className='flex items-center text-left mx-auto justify-center space-x-4' key={item.id}>
                         <div className="mx-auto flex-shrink-0 flex items-center justify-center h-24 w-24 rounded-lg bg-white sm:mx-0 sm:h-16 sm:w-16">
@@ -28,13 +28,13 @@ const Project = ({ project }) => {
                             <h1 className='font-semibold text-xl'>
                                 {item.title} 
                             </h1>
-                            <p className='text-gray-400'>
+                            <p className='text-gray-700 dark:text-gray-400'>
                                 {item.subtitle}
                             </p>
                         </div>
                         <div>
                             <button 
-                                className='bg-gray-700 transition ease-in-out duration-300 hover:bg-gray-800 py-2 px-5 rounded-3xl ml-4 md:ml-12' 
+                                className='bg-gray-200 dark:bg-gray-700 transition ease-in-out duration-300 hover:bg-gray-300 dark:hover:bg-gray-800 py-2 px-5 rounded-3xl ml-4 md:ml-12' 
                                 onClick={() => openProject(item)}
                             >
                                 View
