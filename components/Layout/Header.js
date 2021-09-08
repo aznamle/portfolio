@@ -17,7 +17,7 @@ const Header = () => {
                 <a className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300">Experience</a>
                 {colorTheme === 'light' ? (
                   <svg
-                    className="w-6 h-6 transition duration-300"
+                    className="w-6 h-6"
                     onClick={() => setTheme('light')}
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -34,7 +34,7 @@ const Header = () => {
                   </svg>
                 ) : (
                   <svg
-                    className="w-6 h-6 transition duration-300"
+                    className="w-6 h-6"
                     onClick={() => setTheme('dark')}
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
