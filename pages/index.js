@@ -5,8 +5,9 @@ import Head from 'next/head'
 import Intro from '../components/Intro'
 import Skills from '../components/Skills'
 import Project from '../components/Projects/Project'
+import Experience from '../components/Experience'
 
-export default function Home({ about, projects, skills }) {
+export default function Home({ about, projects, skills, experience, education }) {
 
   return (
     <div className=''>
@@ -18,6 +19,7 @@ export default function Home({ about, projects, skills }) {
       <Intro about={about[0]} />
       <Skills skills={skills} />
       <Project project={projects} />
+      <Experience experience={experience} />
     </div>
   )
 }
@@ -25,19 +27,22 @@ export default function Home({ about, projects, skills }) {
 
 export async function getServerSideProps() {
 
-  const API = 'https://namnomdev.vercel.app'
+  const API = 'http://localhost:3000'
 
-  const [projectsRes, aboutRes, skillsRes] = await Promise.all([
-    fetch('https://namnomdev.vercel.app/api/projects'),
-    fetch('https://namnomdev.vercel.app/api/about'),
-    fetch('https://namnomdev.vercel.app/api/skills')
+  const [projectsRes, aboutRes, skillsRes, experienceRes, educationRes] = await Promise.all([
+    fetch('http://localhost:3000/api/projects'),
+    fetch('http://localhost:3000/api/about'),
+    fetch('http://localhost:3000/api/skills'),
+    fetch('http://localhost:3000/api/experience'),
+    fetch('http://localhost:3000/api/education'),
   ])
   
-  const [projects, about, skills] = await Promise.all([
+  const [projects, about, skills, experience, education] = await Promise.all([
     projectsRes.json(),
     aboutRes.json(),
     skillsRes.json(),
-
+    experienceRes.json(),
+    educationRes.json(),
   ])
   
 
@@ -46,6 +51,8 @@ export async function getServerSideProps() {
           projects,
           about,
           skills,
+          experience,
+          education,
       },
   }
 }

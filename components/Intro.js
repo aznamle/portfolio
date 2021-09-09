@@ -5,16 +5,19 @@ import Skills from './Skills'
 const Intro = ({ about }) => {
     return (
         <div>
-            <div className='md:flex mx-auto md:max-w-5xl items-center px-4 md:px-0 py-12 md:py-24 text-gray-900 dark:text-white space-y-6 md:space-y-0'>
-                <div className='md:w-1/4 items-center'>
+            <div className='mx-auto md:max-w-5xl items-center px-4 md:px-0 py-12  text-gray-900 dark:text-white space-y-4'>
+                <div className='items-center'>
                     <Image className='rounded-full' src='/robot2.png' alt='profile image' width={250} height={250} />
                 </div>
                 
-                <div className='md:w-3/4 md:ml-12 space-y-4'>
+                <div className='space-y-2'>
                     <h1 className='text-5xl font-semibold'>
                         {about.name}
                     </h1>
-                    <p className=' leading-relaxed tracking-normal text-lg text-gray-800 dark:text-gray-200'>
+                    <h1 className='text-xl text-gray-400'>
+                        {about.location}
+                    </h1>
+                    <p className=' leading-relaxed tracking-normal text-lg text-gray-800 dark:text-gray-300'>
                         {about.description}
                     </p>
                 </div>
