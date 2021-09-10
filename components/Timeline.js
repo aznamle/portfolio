@@ -4,7 +4,7 @@ const Timeline = ({ props, head }) => {
     const itemslen = props.length
 
     return (
-        <div className="w-1/2">
+        <div className="md:w-1/2">
         <h1 className='text-gray-900 dark:text-gray-100 text-3xl font-bold'>{head}</h1>
             <div className='py-6'>
             {props.map((props, i ) => (
