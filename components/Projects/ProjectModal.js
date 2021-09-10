@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useRef } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
+import ScrollContainer from 'react-indiana-drag-scroll'
 
 
 const ProjectModal = ({ open, setOpen, item, technology, images }) => {
@@ -41,7 +42,7 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                         <div className='flex flex-row-reverse'>
                             <button className="text-gray-200 hover:text-gray-500 p-1 transform ease-in-out duration-300" onClick={() => setOpen(false)}>
                                 <svg
-                                    className="w-8 h-8"
+                                    className="w-8 h-8 p-1 bg-gray-700 rounded-full"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -56,7 +57,7 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                                 </svg>
                             </button>
                         </div>
-                            <div className="sm:flex justify-between sm:items-start">
+                            <div className="sm:flex sm:items-start">
                             <div className="mx-auto flex-shrink-0 flex items-center justify-center h-24 w-24 rounded-md bg-white sm:mx-0 sm:h-12 sm:w-12">
                             </div>
                             <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
@@ -75,21 +76,19 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                                     {item.description}
                                 </p>
                                 </div>
-                                {images.map((image, index) =>
-                                    <div key={index} className='py-4'>
-                                        <Image className='rounded-md' src={image} alt="image" width={1280} height={720} />
-                                    </div>
-                                )}                        
+                                <div className='max-w-xl'>
+                                    <ScrollContainer className="flex mx-auto overflow-x-auto">
+                                    {images.map((image, index) =>
+                                    <div key={index} className='flex flex-row py-4'>
+                                    <Image className='rounded-md' src={image} alt="image" width={1280} height={720} />
+                                        </div>
+                                    )}
+                                    </ScrollContainer>   
+                                </div>             
                                 </div>
                         </div>
                     </div>
                     <div className="px-4 py-3 sm:px-6 sm:flex">
-                        <button
-                            type="button"
-                            className="w-full inline-flex justify-center rounded-md border border-white text-white shadow-sm px-4 py-2 bg-transparent text-base font-medium hover:text-black hover:bg-white sm:ml-3 sm:w-auto sm:text-sm"
-                        >
-                        close
-                        </button>
                     </div>
                     </div>
                 </Transition.Child>

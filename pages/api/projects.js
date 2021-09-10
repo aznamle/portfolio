@@ -6,7 +6,7 @@ const projects = [
         subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
         description: "Carbnforme",
         technology: ["Next.js", "Prismic", "TailwindCSS"],
-        images: ["/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme2.jpg", "/projects/carbnforme/carbnforme3.jpg"]
+        images: ["/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme2.jpg", "/projects/carbnforme/carbnforme3.jpg"]
     },
     {
         id: 2,
