@@ -5,7 +5,7 @@ import Head from 'next/head'
 import Intro from '../components/Intro'
 import Skills from '../components/Skills'
 import Project from '../components/Projects/Project'
-import Experience from '../components/Experience'
+import Timeline from '../components/Timeline'
 
 export default function Home({ about, projects, skills, experience, education }) {
 
@@ -19,7 +19,10 @@ export default function Home({ about, projects, skills, experience, education })
       <Intro about={about[0]} />
       <Skills skills={skills} />
       <Project project={projects} />
-      <Experience experience={experience} />
+      <div className="flex max-w-5xl mx-auto py-6 px-4 md:px-0">
+        <Timeline props={experience} title={experience.role} subtitle={experience.company} head="Experience" />
+        <Timeline props={education} title={education.school} subtitle={education.major} head="Education" />
+      </div>
     </div>
   )
 }

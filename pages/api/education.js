@@ -1,15 +1,15 @@
 const education = [
     {
         id: 1,
-        school: "Cal Poly Pomona",
-        major: "Computer Information Systems, Applications Development",
+        title: "Cal Poly Pomona",
+        subtitle: "Computer Information Systems, Applications Development",
         time: "2016-2021",
         description: ""
     },
     {
         id: 2,
-        school: "Alta Loma High School",
-        major: "",
+        title: "Alta Loma High School",
+        subtitle: "",
         time: "2012-2016",
         description: ""
     },
