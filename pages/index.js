@@ -33,11 +33,11 @@ export async function getServerSideProps() {
   const API = 'https://namnomdev.vercel.app'
 
   const [projectsRes, aboutRes, skillsRes, experienceRes, educationRes] = await Promise.all([
-    fetch('https://namnomdev.vercel.app/api/projects'),
-    fetch('https://namnomdev.vercel.app/api/about'),
-    fetch('https://namnomdev.vercel.app/api/skills'),
-    fetch('https://namnomdev.vercel.app/api/experience'),
-    fetch('https://namnomdev.vercel.app/api/education'),
+    fetch('http://localhost:3000/api/projects'),
+    fetch('http://localhost:3000/api/about'),
+    fetch('http://localhost:3000/api/skills'),
+    fetch('http://localhost:3000/api/experience'),
+    fetch('http://localhost:3000/api/education'),
   ])
   
   const [projects, about, skills, experience, education] = await Promise.all([

@@ -1,27 +1,69 @@
 import React from 'react'
 
-const Skills = ({ skills }) => {
+import {
+    FaNodeJs,
+    FaReact,
+    FaJs,
+    FaWordpressSimple,
+  } from "react-icons/fa";
+
+import {
+    SiNextDotJs,
+} from "react-icons/si";
+
+import {
+    GrGraphQl,
+} from "react-icons/gr";
+
+const Skills = ({ }) => {
+
+    const skills = [
+        {
+            id: 1,
+            title: "Javascript",
+            icon: <FaJs fontSize='30px' />,
+        },
+        {
+            id: 2,
+            title: "React",
+            icon: <FaReact fontSize='30px' />,
+        },
+        {
+            id: 3,
+            title: "Next.js",
+            icon: <SiNextDotJs fontSize='30px' />,
+        },
+        {
+            id: 4,
+            title: "Node.js",
+            icon: <FaNodeJs fontSize='30px' />,
+        },
+        {
+            id: 5,
+            title: "WordPress",
+            icon: <FaWordpressSimple fontSize='30px' />,
+        },
+        {
+            id: 6,
+            title: "GraphQL",
+            icon: <GrGraphQl fontSize='30px' />,
+        },
+    ]
 
     return (
         <div className='mx-auto max-w-5xl space-y-4 px-4 md:px-0 py-4'>
             <h1 className='text-gray-900 dark:text-gray-100 text-3xl font-bold'>Skills</h1>
             
-            <div className='grid grid-cols-3 gap-2 items-center'>
+            <div className='max-w-2xl grid grid-cols-2 md:grid-cols-3 gap-2'>
                 {skills.map((tech,index) => (
-                    <div key={index} className='flex space-x-4'>
-                        <span className='text-white'>{tech.icon}</span>
-                        <h1 className='text-xl text-white'>{tech.title}</h1>
+                    <div key={index} className='flex space-x-4 items-center'>
+                        <div className='dark:bg-gray-700 p-2'>
+                            <span className='text-gray-900 dark:text-white'>{tech.icon}</span>
+                        </div>
+                        <h1 className='text-lg text-gray-900 dark:text-white'>{tech.title}</h1>
                     </div>
                 ))}
             </div>
-
-            {/* <div className='md:flex mx-auto py-4'>
-                {skills.map((tech, index) => (
-                    <div key={index} className='items-center flex mx-auto space-x-4'>
-                        <h1 className='text-lg text-gray-800 dark:text-white text-left'>{tech.title}</h1>
-                    </div>
-                ))}
-            </div> */}
         </div>
     )
 }
