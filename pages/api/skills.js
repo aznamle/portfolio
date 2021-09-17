@@ -1,33 +1,48 @@
+import {
+    FaNodeJs,
+    FaReact,
+    FaJs,
+    FaWordpressSimple,
+  } from "react-icons/fa";
+
+import {
+    SiNextDotJs,
+} from "react-icons/si";
+
+import {
+    GrGraphQl,
+} from "react-icons/gr";
+  
 const skills = [
     {
         id: 1,
-        title: "Javascript (ES6+)",
-        icon: "",
+        title: "Javascript",
+        icon: <FaJs fontSize="30px" />,
     },
     {
         id: 2,
         title: "React",
-        icon: "",
+        icon: <FaReact fontSize="30px" />,
     },
     {
         id: 3,
         title: "Next.js",
-        icon: "",
+        icon: <SiNextDotJs fontSize="30px" />,
     },
     {
         id: 4,
         title: "Node.js",
-        icon: "",
+        icon: <FaNodeJs fontSize="30px" />,
     },
     {
         id: 5,
         title: "WordPress",
-        icon: "",
+        icon: <FaWordpressSimple fontSize="30px" />,
     },
     {
         id: 6,
         title: "GraphQL",
-        icon: "",
+        icon: <GrGraphQl fontSize="30px" />,
     },
 ]
 
