@@ -17,10 +17,10 @@ export default function Home({ about, projects, skills, experience, education })
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Intro about={about[0]} />
-      <Skills skills={skills} />
-      <Project project={projects} />
+      <Skills skills={skills} id="skills" />
+      <Project project={projects} id="projects"/>
       <div className="md:flex max-w-5xl mx-auto py-6 px-4 md:px-0">
-        <Timeline props={experience} title={experience.role} subtitle={experience.company} head="Experience" />
+        <Timeline props={experience} title={experience.role} subtitle={experience.company} head="Experience" id="experiences" />
         <Timeline props={education} title={education.school} subtitle={education.major} head="Education" />
       </div>
     </div>
