@@ -8,7 +8,7 @@ const Skills = ({ skills }) => {
             
             <div className='grid grid-cols-3 gap-2 items-center'>
                 {skills.map((tech,index) => (
-                    <div className='flex space-x-4'>
+                    <div key={index} className='flex space-x-4'>
                         <span className='text-white'>{tech.icon}</span>
                         <h1 className='text-xl text-white'>{tech.title}</h1>
                     </div>
