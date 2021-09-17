@@ -29,7 +29,7 @@ const Project = ({ project }) => {
                             <h1 className='font-semibold text-xl'>
                                 {item.title} 
                             </h1>
-                            <p className='text-gray-700 dark:text-gray-400'>
+                            <p className='text-gray-700 dark:text-gray-300'>
                                 {item.subtitle}
                             </p>
                         </div>

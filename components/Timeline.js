@@ -15,13 +15,13 @@ const Timeline = ({ props, head }) => {
                     <div className="flex-shrink-0 w-3 h-3 rounded-full mt-2 inline-flex items-center justify-center bg-gray-500 text-white relative z-10 title-font font-medium text-sm">
                     </div>
                     <div className="flex-grow pl-4">
-                        <h2 className="font-medium title-font text-xl text-gray-900 dark:text-gray-200 tracking-wider">
+                        <h2 className=" text-lg text-gray-900 dark:text-gray-100">
                             {props.title}
                         </h2>
-                        <h2 className="font-medium title-font text-md text-gray-600 dark:text-gray-400 tracking-wider">
+                        <h2 className="text-md text-gray-600 dark:text-gray-200">
                             {props.subtitle}
                         </h2>
-                        <p className="font-light leading-relaxed text-gray-600 dark:text-gray-400">
+                        <p className=" leading-relaxed text-gray-600 dark:text-gray-400">
                             {props.time}
                         </p>
                     </div>

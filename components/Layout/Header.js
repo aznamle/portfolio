@@ -8,13 +8,13 @@ const Header = () => {
     return (
         <header className="text-gray-900 dark:text-white body-font">
             <div className="max-w-5xl mx-auto flex flex-wrap py-6 justify-between px-4 flex-row items-center">
-                <a className="flex title-font font-medium items-center text-gray-900 dark:text-white  md:mb-0">
+                <a className="flex title-font font-medium items-center text-gray-900 dark:text-white  md:mb-0" href="/">
                 <span className="text-xl">Nam Le</span>
                 </a>
                 <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center space-x-2">
-                <a className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300">Skills</a>
-                <a className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300">Projects</a>
-                <a className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300">Experience</a>
+                <a className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300" href="#skills">Skills</a>
+                <a className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300" href="#projects">Projects</a>
+                <a className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300" href="#experience">Experience</a>
                 {colorTheme === 'light' ? 
                  (
                   <svg

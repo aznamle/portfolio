@@ -14,10 +14,10 @@ const Intro = ({ about }) => {
                     <h1 className='text-5xl font-semibold'>
                         {about.name}
                     </h1>
-                    <h1 className='text-xl text-gray-400'>
+                    <h1 className='text-xl text-gray-300'>
                         {about.location}
                     </h1>
-                    <p className=' leading-relaxed tracking-normal text-lg text-gray-800 dark:text-gray-300'>
+                    <p className=' leading-relaxed tracking-normal text-lg text-gray-900 dark:text-gray-100'>
                         {about.description}
                     </p>
                 </div>
