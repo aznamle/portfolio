@@ -67,22 +67,25 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                                 </svg>
                             </button>
                         </div>
-                        <div className="flex sm:items-start">
-                            <div className="mx-auto flex-shrink-0 flex items-center justify-center h-24 w-24 rounded-md bg-black dark:bg-white sm:mx-0 ">
+                        <div className="flex items-start">
+                            <div className="flex-shrink-0 flex items-center justify-center h-24 w-24 rounded-md bg-black dark:bg-white sm:mx-0 ">
                             </div>
-                            <div className="mt-3 ml-4 text-left">
+                            <div className="mt-1 ml-4 text-left">
                                 <Dialog.Title as="h3" className="text-2xl leading-6 font-bold text-gray-900 dark:text-white">
                                     {item.title}
                                 </Dialog.Title>
-                                <div className='flex mx-auto text-center space-x-2 py-4'>
+                                <div className='py-2'>
+                                    <p className='text-gray-700 dark:text-gray-300'>{item.subtitle}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='flex mx-auto text-center space-x-2 py-4'>
                                 {technology.map((tech, index) => (
                                     <div key={index} className='rounded-xl border border-opacity-50 border-gray-900 dark:border-white text-gray-900 dark:text-white shadow-sm px-3 py-2 '>
                                         {tech}
                                     </div>
                                 ))}
                                 </div>
-                            </div>
-                        </div>
                         <div className="mt-2 border-t border-gray-300 dark:border-gray-600">
                             <Swiper
                                 spaceBetween={25}
