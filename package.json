@@ -18,6 +18,7 @@
     "react-icons": "^4.2.0",
     "react-indiana-drag-scroll": "^2.0.1",
     "react-multi-carousel": "^2.6.5",
+    "swiper": "^7.0.6",
     "swr": "^1.0.0"
   },
   "devDependencies": {

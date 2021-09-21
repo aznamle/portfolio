@@ -1,7 +1,8 @@
 import React, { Fragment, useEffect, useRef } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
-import ScrollContainer from 'react-indiana-drag-scroll'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 
 const ProjectModal = ({ open, setOpen, item, technology, images }) => {
@@ -74,15 +75,18 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                             </div>
                         </div>
                         <div className="mt-2">
-                                <ScrollContainer className="flex mx-auto overflow-auto">
-                                    <div className='flex mx-auto flex-row'>
-                                    {images.map((image, index) =>
-                                    <div key={index} className='py-4'>
-                                    <Image className='rounded-md' src={image} alt="image" width={1280} height={720} />
-                                        </div>
-                                    )}
-                                    </div>
-                                    </ScrollContainer>   
+                            <Swiper
+                                spaceBetween={50}
+                                slidesPerView={1}
+                                onSlideChange={() => console.log('slide change')}
+                                onSwiper={(swiper) => console.log(swiper)}
+                            >
+                                {images.map((image, index) =>
+                                    <SwiperSlide key={index} className='py-4'>
+                                        <Image className='rounded-md' src={image} alt="image" width={1280} height={720} />
+                                    </SwiperSlide>
+                                )}
+                            </Swiper>
                         </div>
                                 <p className="text-gray-700 dark:text-gray-300">
                                     {item.description}
