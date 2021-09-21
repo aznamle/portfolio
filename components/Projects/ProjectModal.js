@@ -46,7 +46,8 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                     leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                     leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                 >
-                    <div className="inline-block align-bottom bg-white dark:bg-gray-900 rounded-lg border border-gray-300 dark:border-gray-600 text-left overflow-hidden shadow-lg transform transition-all my-36 sm:align-bottom max-h-4/5 overflow-y-auto max-w-6xl">
+                    <div className="inline-block align-bottom bg-white dark:bg-gray-900 rounded-lg border border-gray-300 dark:border-gray-600 
+                        text-left overflow-hidden shadow-lg transform transition-all my-36 sm:align-bottom max-h-4/5 overflow-y-auto max-w-6xl">
                         <div className="bg-white dark:bg-gray-900 px-4 pb-4 ">
                         <div className='flex flex-row-reverse mt-2'>
                             <button className="text-gray-200 hover:text-gray-500 transform ease-in-out duration-300" onClick={() => setOpen(false)}>
@@ -91,7 +92,7 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                                     "hide": true
                                   }}
                                 freeMode={true}
-                                  >
+                            >
                                 {images.map((image, index) =>
                                     <SwiperSlide key={index} className='py-4'>
                                         <Image className='rounded-xl' src={image} blurDataURL alt="image" placeholder='blur' layout="responsive" width='1600' height='900'/>
