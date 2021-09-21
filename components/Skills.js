@@ -9,6 +9,7 @@ import {
 
 import {
     SiNextDotJs,
+    SiTailwindcss
 } from "react-icons/si";
 
 import {
@@ -40,8 +41,8 @@ const Skills = ({ }) => {
         },
         {
             id: 5,
-            title: "WordPress",
-            icon: <FaWordpressSimple fontSize='30px' />,
+            title: "Tailwind CSS",
+            icon: <SiTailwindcss fontSize='30px' />,
         },
         {
             id: 6,
