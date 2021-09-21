@@ -1,9 +1,14 @@
 import React from 'react'
 
+import {
+    SiNextDotJs,
+    SiTailwindcss
+} from "react-icons/si";
+
 const Footer = () => {
     return (
         <div className='py-24 text-center text-white'>
-            Footer
+            <p>Built with NextJS and TailwindCSS</p>
         </div>
     )
 }

@@ -8,7 +8,7 @@ import Timeline from '../components/Timeline'
 export default function Home({ about, projects, skills, experience, education }) {
 
   return (
-    <div className=''>
+    <div className='space-y-8'>
       <Intro about={about[0]} />
       <Skills skills={skills} id="skills" />
       <Project project={projects} id="projects"/>
