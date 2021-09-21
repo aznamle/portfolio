@@ -56,8 +56,8 @@ const Skills = ({ }) => {
             
             <div className='max-w-2xl grid grid-cols-2 md:grid-cols-3 gap-2'>
                 {skills.map((tech,index) => (
-                    <div key={index} className='flex space-x-4 items-center border border-gray-400 border-opacity-75 dark:border-gray-600 rounded-md'>
-                        <div className='dark:bg-gray-700 p-2'>
+                    <div key={index} className='flex space-x-4 items-center border border-gray-300 border-opacity-75 dark:border-gray-600 rounded-md'>
+                        <div className='bg-gray-300 dark:bg-gray-600 p-2'>
                             <span className='text-gray-900 dark:text-white'>{tech.icon}</span>
                         </div>
                         <h1 className='text-lg text-gray-900 dark:text-white'>{tech.title}</h1>
