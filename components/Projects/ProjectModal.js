@@ -50,9 +50,9 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                         text-left overflow-hidden shadow-lg transform transition-all my-36 sm:align-bottom max-h-4/5 overflow-y-auto max-w-6xl">
                         <div className="bg-white dark:bg-gray-900 px-4 pb-4 ">
                         <div className='flex flex-row-reverse mt-2'>
-                            <button className="text-gray-200 hover:text-gray-500 transform ease-in-out duration-300" onClick={() => setOpen(false)}>
+                            <button className="text-gray-900 dark:text-gray-200 hover:text-gray-400 dark:hover:text-gray-500 transform ease-in-out duration-300" onClick={() => setOpen(false)}>
                                 <svg
-                                    className="w-8 h-8 p-1 bg-gray-700 rounded-full"
+                                    className="w-8 h-8 p-1 bg-gray-200 dark:bg-gray-700 rounded-full"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -61,7 +61,7 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
-                                    strokeWidth="1"
+                                    strokeWidth="2"
                                     d="M6 18L18 6M6 6l12 12"
                                 ></path>
                                 </svg>
@@ -95,7 +95,7 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                             >
                                 {images.map((image, index) =>
                                     <SwiperSlide key={index} className='py-4'>
-                                        <Image className='rounded-xl' src={image} blurDataURL alt="image" placeholder='blur' layout="responsive" width='1600' height='900'/>
+                                        <Image className='rounded-xl' src={image} blurDataURL alt="image" placeholder='blur' layout="intrinsic" width='1600' height='900'/>
                                     </SwiperSlide>
                                 )}
                             </Swiper>
