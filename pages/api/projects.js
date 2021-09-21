@@ -6,11 +6,11 @@ const projects = [
         subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
         description: "Carbnforme",
         technology: ["Next.js", "Prismic", "TailwindCSS"],
-        images: ["/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme.jpg"]
+        images: ["/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme.jpg", ]
     },
     {
         id: 2,
-        title: "title2",
+        title: "Brandcreative Inc.",
         subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
         description: "des2",
         technology: ["Next.js", "Prismic", "TailwindCSS"],
@@ -27,10 +27,10 @@ const projects = [
 
     },
     {
-        id: 3,
-        title: "title3",
+        id: 4,
+        title: "title4",
         subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
-        description: "des3",
+        description: "des4",
         technology: ["React", "TailwindCSS"],
         images: ["", ]
     },
