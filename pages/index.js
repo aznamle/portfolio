@@ -17,7 +17,7 @@ export default function Home({ about, projects, skills, experience, education })
         <Timeline props={experience} title={experience.role} subtitle={experience.company} head="Experience" id="experiences" />
         <Timeline props={education} title={education.school} subtitle={education.major} head="Education" />
       </div>
-      {/* <Contact /> */}
+      <Contact />
     </div>
   )
 }
