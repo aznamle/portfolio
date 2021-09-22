@@ -4,6 +4,7 @@ const education = [
         title: "Cal Poly Pomona",
         subtitle: "Computer Information Systems, Applications Development",
         time: "2016-2021",
+        location: "Pomona, California",
         description: ""
     },
     {
@@ -11,6 +12,7 @@ const education = [
         title: "Alta Loma High School",
         subtitle: "",
         time: "2012-2016",
+        location: "Alta Loma, California",
         description: ""
     },
 ]

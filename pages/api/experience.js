@@ -4,6 +4,7 @@ const experience = [
         title: "Junior Web Developer",
         subtitle: "Brandcreative Inc.",
         time: "April 2019 - Present",
+        location: "Ontario, California",
         description: ""
     },
     {
@@ -11,6 +12,7 @@ const experience = [
         title: "Internship",
         subtitle: "Brandcreative Inc.",
         time: "December 2018 - April 2019",
+        location: "Ontario, California",
         description: ""
     },
 
