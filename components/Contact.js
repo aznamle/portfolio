@@ -6,7 +6,7 @@ const Contact = () => {
             <h1 className='text-3xl font-bold text-gray-900 dark:text-white'>Hit me up!</h1>
             <p className='text-xl text-gray-600 dark:text-gray-400'>Feel free to contact me for inquiries, offers, or even just to chat!</p>
             <div>
-                <a className='text-xl text-gray-900 dark:text-white' href='mailto:namle1998@hotmail.com'>namle1998@hotmail.com</a>
+                <a className='text-xl font-semibold text-gray-900 dark:text-white' href='mailto:namle1998@hotmail.com'>namle1998@hotmail.com</a>
             </div>
         </div>
     )

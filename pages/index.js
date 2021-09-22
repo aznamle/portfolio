@@ -5,6 +5,7 @@ import Skills from '../components/Skills'
 import Project from '../components/Projects/Project'
 import Timeline from '../components/Timeline'
 import Contact from '../components/Contact'
+import ScrollToTop from '../components/ScrollToTop'
 
 export default function Home({ about, projects, skills, experience, education }) {
 
@@ -13,19 +14,18 @@ export default function Home({ about, projects, skills, experience, education })
       <Intro about={about[0]} />
       <Skills skills={skills} id="skills" />
       <Project project={projects} id="projects"/>
-      <div className="md:flex max-w-5xl mx-auto py-6 px-4 md:px-0">
-        <Timeline props={experience} title={experience.role} subtitle={experience.company} head="Experience" id="experiences" />
+      <div className="md:flex max-w-5xl mx-auto py-6 px-4 md:px-0" id="experiences">
+        <Timeline props={experience} title={experience.role} subtitle={experience.company} head="Experience" />
         <Timeline props={education} title={education.school} subtitle={education.major} head="Education" />
       </div>
       <Contact />
+      <ScrollToTop />
     </div>
   )
 }
 
 
 export async function getServerSideProps() {
-
-  const API = 'https://namnomdev.vercel.app'
 
   const [projectsRes, aboutRes, skillsRes, experienceRes, educationRes] = await Promise.all([
     fetch('https://namnomdev.vercel.app/api/projects'),
