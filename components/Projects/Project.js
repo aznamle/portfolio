@@ -19,11 +19,11 @@ const Project = ({ project }) => {
         <div className='mx-auto max-w-5xl space-y-2 px-4 md:px-0 py-12'>
             <h1 className='text-gray-900 dark:text-gray-100 text-3xl font-bold'>Projects</h1>
             <p className='text-gray-700 dark:text-gray-400 text-xl font-light pb-10'>Here are some of my projects that I have worked on. Feel free to check them out.</p>
-            <div className='mx-auto grid md:grid-cols-2 gap-10 px-8 md:px-0 text-gray-900 dark:text-white'>
+            <div className='mx-auto grid md:grid-cols-2 gap-10 px-2 md:px-0 text-gray-900 dark:text-white'>
                 {project.map(item => (
                     <div className='flex items-center text-left mx-auto justify-center space-x-4' key={item.id}>
-                        <div className="mx-auto flex-shrink-0 flex items-center justify-center h-24 w-24 rounded-lg bg-gray-800 dark:bg-white sm:mx-0 sm:h-16 sm:w-16">
-                            <p className='text-white text-2xl font-bold'>{item.icon}</p>
+                        <div className="mx-auto flex-shrink-0 flex items-center justify-center h-20 w-20 md:h-24 md:w-24 rounded-lg bg-gray-800 dark:bg-white sm:mx-0 sm:h-16 sm:w-16">
+                            <p className='text-white dark:text-gray-900 text-4xl font-bold'>{item.icon}</p>
                         </div>
                         <div className='border-b pb-4 flex items-center border-gray-300 dark:border-gray-700'>
                         <div>

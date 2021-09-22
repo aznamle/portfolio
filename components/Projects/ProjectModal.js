@@ -2,6 +2,8 @@ import React, { Fragment, useEffect, useRef, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
 
+import Loader from '../Loader'
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {
     Scrollbar
@@ -24,7 +26,7 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
     return (
         <Transition.Root show={open} as={Fragment}>
             <Dialog as="div" className="fixed z-10 inset-0 overflow-y-auto" initialFocus={cancelButtonRef} onClose={setOpen}>
-                <div className="flex items-end justify-center max-h-screen pt-2 px-2 pb-20 text-center sm:block sm:p-0">
+                <div className="flex items-end justify-center min-h-screen pt-2 px-2 pb-20 text-center sm:block sm:p-0">
                 <Transition.Child
                     as={Fragment}
                     enter="ease-out duration-500"
@@ -51,7 +53,7 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                     leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                 >
                     <div className="inline-block mx-auto align-bottom bg-white dark:bg-gray-900 rounded-lg border border-gray-300 dark:border-gray-600 
-                        text-left overflow-hidden shadow-lg transform transition-all my-36 overflow-y-auto w-auto md:w-3/5">
+                        text-left overflow-hidden shadow-lg transform transition-all my-28 overflow-y-auto w-auto md:max-w-6xl">
                         <div className="bg-white dark:bg-gray-900 px-4 pb-4 ">
                         <div className='flex flex-row-reverse mt-2'>
                             <button className="text-gray-900 dark:text-gray-200 hover:text-gray-400 dark:hover:text-gray-500 transform ease-in-out duration-300" onClick={() => setOpen(false)}>
@@ -93,25 +95,31 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                         <div className="mt-2 h-5/6 border-t border-gray-300 dark:border-gray-600 ">
                             <Swiper
                                 spaceBetween={25}
-                                slidesPerView={2}
+                                slidesPerView={1.25}
                                 centeredSlides={true}
                                 scrollbar={{
                                     "hide": true
                                   }}
                                 freeMode={true}
                             >
-                                {images.map((image, index) =>
+                                {!images ? <Loader />: images.map((image, index) =>
                                     <SwiperSlide key={index} className='py-4'>
                                         <Image className='rounded-xl' src={image} alt="image" layout="intrinsic" width='1920' height='1080'/>
                                     </SwiperSlide>
-                                )}
+                                ) }
                             </Swiper>
                         </div>
-                        <div className='max-w-3xl py-4'>
+                        <div className='max-w-3xl py-4 space-y-4'>
                             <p className="text-gray-700 dark:text-gray-300 text-xl">
                                 {item.description}
                             </p>
+                            <button className='bg-gray-200 dark:bg-gray-700 transition ease-in-out duration-300 
+                                hover:bg-gray-400 dark:hover:bg-gray-800 py-2 px-16 rounded-2xl'
+                            >
+                                <a href={item.url}>Visit</a>
+                            </button>
                         </div>
+
                     </div>
                     </div>
                 </Transition.Child>

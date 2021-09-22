@@ -5,8 +5,10 @@ const projects = [
         icon: "CF",
         title: "Carbnforme",
         subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
-        description: "Carbnforme",
-        technology: ["Next.js", "Prismic", "TailwindCSS"],
+        description: "quis nostrud exercitation ullamco laboris nisi ut aliquip quis nostrud exercitation ullamco laboris nisi ut aliquip quis nostrud exercitation ullamco laboris nisi ut aliquip quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+        url: "https://carbnforme.vercel.app/",
+        github_url: "",
+        technology: ["React", "Next.js", "Prismic", "TailwindCSS"],
         images: ["/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme.jpg", ]
     },
     {
@@ -15,7 +17,9 @@ const projects = [
         icon: "BC",
         subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
         description: "des2",
-        technology: ["Next.js", "Prismic", "TailwindCSS"],
+        url: "https://brandcreativeinc.com/",
+        github_url: "",
+        technology: ["React", "Next.js", "Prismic", "TailwindCSS"],
         images: ["", ]
 
     },
@@ -25,6 +29,8 @@ const projects = [
         icon: "P3",
         subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
         description: "des3",
+        url: "",
+        github_url: "",
         technology: ["React", "TailwindCSS"],
         images: ["", ]
 
@@ -35,6 +41,8 @@ const projects = [
         icon: "P4",
         subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
         description: "des4",
+        url: "",
+        github_url: "",
         technology: ["React", "TailwindCSS"],
         images: ["", ]
     },

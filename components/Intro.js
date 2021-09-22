@@ -52,10 +52,10 @@ const Intro = ({ about }) => {
                                 hover:bg-gray-400 dark:hover:bg-gray-800 py-2 px-5 rounded-3xl' 
                             >
                                 <a href={social.url} target="_blank" rel="noreferrer">
-                                <div className='flex space-x-2 items-center'>
-                                    <span>{social.icon}</span>
-                                    <p className='text-lg'>{social.title}</p>
-                                </div>
+                                    <div className='flex space-x-2 items-center'>
+                                        <span>{social.icon}</span>
+                                        <p className='text-lg'>{social.title}</p>
+                                    </div>
                                 </a>
                         </button>
                 ))}
