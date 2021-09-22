@@ -4,7 +4,7 @@ const about = [
         name: "Hello, I'm Nam! 👋",
         image: "",
         role: "Software Developer",
-        location: "Los Angeles, California",
+        location: "Rancho Cucamonga, California",
         description: "I am a front-end developer focusing on Javascript ES6+! My stack includes React, NextJS, Prisma and Prismic.",
         email : "namle1998@hotmail.com",
         social: [

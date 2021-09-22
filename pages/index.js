@@ -4,6 +4,7 @@ import Intro from '../components/Intro'
 import Skills from '../components/Skills'
 import Project from '../components/Projects/Project'
 import Timeline from '../components/Timeline'
+import Contact from '../components/Contact'
 
 export default function Home({ about, projects, skills, experience, education }) {
 
@@ -16,6 +17,7 @@ export default function Home({ about, projects, skills, experience, education })
         <Timeline props={experience} title={experience.role} subtitle={experience.company} head="Experience" id="experiences" />
         <Timeline props={education} title={education.school} subtitle={education.major} head="Education" />
       </div>
+      <Contact />
     </div>
   )
 }
