@@ -6,6 +6,7 @@ const about = [
         role: "Software Developer",
         location: "Los Angeles, California",
         description: "I am a front-end developer focusing on Javascript ES6+! My stack includes React, NextJS, Prisma and Prismic.",
+        email : "namle1998@hotmail.com",
         social: [
             {
                 title: "Twitter",
@@ -19,8 +20,7 @@ const about = [
                 title: "GitHub",
                 url: "https://github.com/aznamle"
             },
-
-        ]
+        ],
     },
 ]
 

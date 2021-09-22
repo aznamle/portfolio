@@ -24,7 +24,7 @@ const Project = ({ project }) => {
                     <div className='flex items-center text-left mx-auto justify-center space-x-4' key={item.id}>
                         <div className="mx-auto flex-shrink-0 flex items-center justify-center h-24 w-24 rounded-lg bg-gray-900 dark:bg-white sm:mx-0 sm:h-16 sm:w-16">
                         </div>
-                        <div className='border-b pb-4 border-opacity-50 flex items-center'>
+                        <div className='border-b pb-4 flex items-center border-gray-300 dark:border-gray-700'>
                         <div>
                             <h1 className='font-semibold text-xl'>
                                 {item.title} 
@@ -35,7 +35,7 @@ const Project = ({ project }) => {
                         </div>
                         <div>
                             <button 
-                                className='bg-gray-200 dark:bg-gray-700 transition ease-in-out duration-300 hover:bg-gray-300 dark:hover:bg-gray-800 py-2 px-5 rounded-3xl ml-4 md:ml-12' 
+                                className='bg-gray-200 dark:bg-gray-700 transition ease-in-out duration-300 hover:bg-gray-400 dark:hover:bg-gray-800 py-2 px-5 rounded-3xl ml-4 md:ml-12' 
                                 onClick={() => openProject(item)}
                             >
                                 View

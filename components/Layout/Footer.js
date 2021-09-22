@@ -7,7 +7,7 @@ import {
 
 const Footer = () => {
     return (
-        <div className='py-24 text-center text-white'>
+        <div className='p-12 text-center text-black dark:text-white'>
             <p>Built with NextJS and TailwindCSS</p>
         </div>
     )

@@ -11,12 +11,13 @@ const Header = () => {
         <header className="text-gray-900 dark:text-white body-font">
             <div className="max-w-5xl mx-auto flex flex-wrap py-6 justify-between px-4 flex-row items-center">
                 <Link className="flex title-font font-medium items-center text-gray-900 dark:text-white  md:mb-0" href="/">
-                  <a className="text-xl font-bold">Nam Le</a>
+                  <a className="text-2xl font-bold">Nam Le</a>
                 </Link>
                 <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center space-x-2">
                 <Link className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300" href="#skills"><a>Skills</a></Link>
                 <Link className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300" href="#projects"><a>Projects</a></Link>
                 <Link className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300" href="#experience"><a>Experience</a></Link>
+                <div className='border border-black dark:border-opacity-0 dark:bg-gray-800 p-1 rounded-full'>
                 {colorTheme === 'light' ? 
                  (
                   <svg
@@ -53,6 +54,7 @@ const Header = () => {
                     />
                   </svg>
                 )}
+                </div>
                 </nav>
             </div>
 
