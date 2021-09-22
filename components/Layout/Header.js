@@ -1,9 +1,35 @@
-import React, { useRef } from 'react';
+import { useEffect, useState } from "react";
 import Link from 'next/link'
+import { useTheme } from "next-themes";
 
-import Darkmode from "../../utils/Darkmode";
+import {
+  FiMoon,
+  FiSun
+} from 'react-icons/fi'
 
 const Header = () => {
+    const [isMounted, setIsMounted] = useState(false);
+    const { systemTheme, theme, setTheme } = useTheme();
+
+    useEffect(() => {
+      setIsMounted(true);
+    }, []);
+
+    const toggleDarkMode = () => {
+      if (!isMounted) return null;
+
+      const currentTheme = theme === 'system' ? systemTheme : theme;
+
+      if(currentTheme === 'dark') {
+        return (
+          <FiSun fontSize='20px' onClick={()=>setTheme('light')} />
+        )
+      } else {
+        return (
+          <FiMoon fontSize='20px' onClick={()=>setTheme('dark')} />
+        )
+      }
+    }
 
     return (
         <header className="text-gray-900 dark:text-white body-font">
@@ -16,7 +42,7 @@ const Header = () => {
                 <Link className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300" href="#projects"><a>Projects</a></Link>
                 <Link className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300" href="#experience"><a>Experience</a></Link>
                   <div className='border border-gray-600 dark:border-opacity-0 dark:bg-gray-800 p-1 rounded-full'>
-                    {Darkmode()}
+                    {toggleDarkMode()}
                   </div>
                 </nav>
             </div>
