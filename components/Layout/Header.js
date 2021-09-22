@@ -3,9 +3,12 @@ import Link from 'next/link'
 import { useTheme } from "next-themes";
 
 import {
-  FiMoon,
   FiSun
 } from 'react-icons/fi'
+
+import {
+  FaMoon
+} from 'react-icons/fa'
 
 const Header = () => {
     const [isMounted, setIsMounted] = useState(false);
@@ -26,7 +29,7 @@ const Header = () => {
         )
       } else {
         return (
-          <FiMoon fontSize='20px' onClick={()=>setTheme('dark')} />
+          <FaMoon fontSize='20px' onClick={()=>setTheme('dark')} />
         )
       }
     }
