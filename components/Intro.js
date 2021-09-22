@@ -45,9 +45,9 @@ const Intro = ({ about }) => {
                         {about.description}
                     </p>
                 </div>
-                <div className='flex justify-start space-x-4'>
+                <div className='grid grid-cols-3 md:grid-cols-7'>
                 {socials.map((social,index) => (
-                    <div key={index} className='flex'>
+                    <div key={index} className=''>
                         <button 
                             className='bg-gray-200 dark:bg-gray-700 transition ease-in-out duration-300 
                                 hover:bg-gray-400 dark:hover:bg-gray-800 py-2 px-5 rounded-3xl' 
