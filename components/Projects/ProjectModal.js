@@ -16,15 +16,9 @@ SwiperCore.use([Scrollbar]);
 
 
 const ProjectModal = ({ open, setOpen, item, technology, images }) => {
-      
+
     const cancelButtonRef = useRef(null)
 
-    const myLoader = () => {
-        return 'lmao'
-      }
-
-    if (!images) return <Loader />
-    if (images) {
     return (
         <Transition.Root show={open} as={Fragment}>
             <Dialog as="div" className="fixed z-10 inset-0 overflow-y-auto" initialFocus={cancelButtonRef} onClose={setOpen}>
@@ -88,6 +82,7 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                             </div>
                         </div>
                         <div className='flex mx-auto text-center space-x-2 py-4'>
+                                {!technology && <Loader />}
                                 {technology.map((tech, index) => (
                                     <div key={index} className='rounded-xl border border-opacity-50 border-gray-900 dark:border-white text-gray-900 dark:text-white shadow-sm px-3 py-2 '>
                                         {tech}
@@ -104,7 +99,8 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                                   }}
                                 freeMode={true}
                             >
-                                {!images ? (<Loader />) : (images.map((image, index) =>
+                                {!images && <Loader />}
+                                {(images.map((image, index) =>
                                     <SwiperSlide key={index} className='py-4'>
                                         <Image className='rounded-xl' src={image} alt="image" layout="intrinsic" width='1920' height='1080'/>
                                     </SwiperSlide>
@@ -129,7 +125,6 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
             </Dialog>
         </Transition.Root>
     )
-    }
 }
 
 export default ProjectModal
