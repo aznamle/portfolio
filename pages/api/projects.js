@@ -2,6 +2,7 @@ const projects = [
 
     {
         id: 1,
+        icon: "CF",
         title: "Carbnforme",
         subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
         description: "Carbnforme",
@@ -11,6 +12,7 @@ const projects = [
     {
         id: 2,
         title: "Brandcreative Inc.",
+        icon: "BC",
         subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
         description: "des2",
         technology: ["Next.js", "Prismic", "TailwindCSS"],
@@ -20,6 +22,7 @@ const projects = [
     {
         id: 3,
         title: "title3",
+        icon: "P3",
         subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
         description: "des3",
         technology: ["React", "TailwindCSS"],
@@ -29,6 +32,7 @@ const projects = [
     {
         id: 4,
         title: "title4",
+        icon: "P4",
         subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
         description: "des4",
         technology: ["React", "TailwindCSS"],
