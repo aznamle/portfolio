@@ -23,6 +23,8 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
         return 'lmao'
       }
 
+    if (!images) return <Loader />
+    if (images) {
     return (
         <Transition.Root show={open} as={Fragment}>
             <Dialog as="div" className="fixed z-10 inset-0 overflow-y-auto" initialFocus={cancelButtonRef} onClose={setOpen}>
@@ -53,7 +55,7 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                     leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                 >
                     <div className="inline-block mx-auto align-bottom bg-white dark:bg-gray-900 rounded-lg border border-gray-300 dark:border-gray-600 
-                        text-left overflow-hidden shadow-lg transform transition-all my-28 overflow-y-auto w-auto md:max-w-6xl">
+                        text-left overflow-hidden shadow-lg transform transition-all md:my-28 overflow-y-auto w-auto md:max-w-6xl">
                         <div className="bg-white dark:bg-gray-900 px-4 pb-4 ">
                         <div className='flex flex-row-reverse mt-2'>
                             <button className="text-gray-900 dark:text-gray-200 hover:text-gray-400 dark:hover:text-gray-500 transform ease-in-out duration-300" onClick={() => setOpen(false)}>
@@ -102,11 +104,11 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                                   }}
                                 freeMode={true}
                             >
-                                {!images ? <Loader />: images.map((image, index) =>
+                                {!images ? (<Loader />) : (images.map((image, index) =>
                                     <SwiperSlide key={index} className='py-4'>
                                         <Image className='rounded-xl' src={image} alt="image" layout="intrinsic" width='1920' height='1080'/>
                                     </SwiperSlide>
-                                ) }
+                                ))}
                             </Swiper>
                         </div>
                         <div className='max-w-3xl py-4 space-y-4'>
@@ -127,6 +129,7 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
             </Dialog>
         </Transition.Root>
     )
+    }
 }
 
 export default ProjectModal

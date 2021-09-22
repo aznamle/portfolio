@@ -25,7 +25,7 @@ export default function Home({ about, projects, skills, experience, education })
 }
 
 
-export async function getServerSideProps() {
+export async function getStaticProps(context) {
 
   const [projectsRes, aboutRes, skillsRes, experienceRes, educationRes] = await Promise.all([
     fetch('https://namnomdev.vercel.app/api/projects'),

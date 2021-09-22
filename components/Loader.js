@@ -3,7 +3,7 @@ import React from 'react'
 const Loader = () => {
     return (
         <div>
-            <p className='text-white text-3xl'>LOL</p>
+            <p className='text-black text-3xl'>LOL</p>
         </div>
     )
 }
