@@ -7,6 +7,10 @@ import {
     SiGithub
 } from "react-icons/si";
 
+import {
+    AiOutlineFileText
+} from 'react-icons/ai'
+
 const Intro = ({ about }) => {
 
     const socials = [
@@ -24,6 +28,11 @@ const Intro = ({ about }) => {
             title: "GitHub",
             url: "https://github.com/aznamle",
             icon: <SiGithub fontSize='20px' />
+        },
+        {
+            title: "Resume",
+            url: "https://github.com/aznamle",
+            icon: <AiOutlineFileText fontSize='20px' color='' />
         },
     ]
 
