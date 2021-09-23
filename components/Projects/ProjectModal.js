@@ -32,7 +32,7 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                     leaveFrom="opacity-100"
                     leaveTo="opacity-0"
                 >
-                    <Dialog.Overlay className="fixed inset-0 bg-white dark:bg-gray-800 bg-opacity-75 dark:bg-opacity-75 transition-opacity" />
+                    <Dialog.Overlay className="fixed inset-0 bg-gray-500 dark:bg-gray-800 bg-opacity-75 dark:bg-opacity-75 transition-opacity" />
                 </Transition.Child>
 
                 {/* This element is to trick the browser into centering the setOpen contents. */}
@@ -48,8 +48,8 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                     leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                     leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                 >
-                    <div className="inline-block mx-auto align-bottom bg-white dark:bg-gray-900 rounded-lg border border-gray-300 dark:border-gray-600 
-                        text-left overflow-hidden shadow-lg transform transition-all md:my-28 overflow-y-auto w-auto md:max-w-6xl">
+                    <div className="inline-block mx-auto align-bottom bg-white dark:bg-gray-900 rounded-lg border border-gray-500 dark:border-gray-600 
+                        text-left overflow-hidden shadow-xl transform transition-all md:mt-12 overflow-y-auto w-auto md:max-w-4xl">
                         <div className="bg-white dark:bg-gray-900 px-4 pb-4 ">
                         <div className='flex flex-row-reverse mt-2'>
                             <button className="text-gray-900 dark:text-gray-200 hover:text-gray-400 dark:hover:text-gray-500 transform ease-in-out duration-300" onClick={() => setOpen(false)}>
@@ -107,14 +107,14 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                                 ))}
                             </Swiper>
                         </div>
-                        <div className='max-w-3xl py-4 space-y-4'>
+                        <div className='w-3/4 py-4 space-y-4'>
                             <p className="text-gray-700 dark:text-gray-300 text-xl">
                                 {item.description}
                             </p>
                             <button className='bg-gray-200 dark:bg-gray-700 transition ease-in-out duration-300 
                                 hover:bg-gray-400 dark:hover:bg-gray-800 py-2 px-16 rounded-2xl'
                             >
-                                <a href={item.url}>Visit</a>
+                                <a href={item.url} target="_blank" rel="noreferrer">Visit</a>
                             </button>
                         </div>
 
