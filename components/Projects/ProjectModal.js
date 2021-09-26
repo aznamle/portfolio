@@ -109,7 +109,7 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                                 ))}
                             </Swiper>
                         </div>
-                        <div className='py-4 space-y-4'>
+                        <div className='md:w-5/6 py-4 space-y-4'>
                             <p className="text-gray-700 dark:text-gray-300 text-xl">
                                 {item.description}
                             </p>

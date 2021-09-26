@@ -44,7 +44,7 @@ const Header = () => {
                 <Link className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300" href="#skills"><a>Skills</a></Link>
                 <Link className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300" href="#projects"><a>Projects</a></Link>
                 <Link className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300" href="#experience"><a>Experience</a></Link>
-                  <div className='border border-gray-600 dark:border-opacity-0 dark:bg-gray-800 p-1 rounded-full'>
+                  <div className='border border-gray-600 dark:border-opacity-0 dark:bg-gray-800 p-1 rounded-full transition duration-100'>
                     {toggleDarkMode()}
                   </div>
                 </nav>

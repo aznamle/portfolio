@@ -5,7 +5,7 @@ const projects = [
         icon: "CF",
         title: "CarbnForme",
         subtitle: "Front-end website to promote CarbnForme designed products.",
-        description: "CarbnForme is about creating ideas from the foundation and fundamentals that we have amassed throughout our years of combined experience makes us, and others, believe in what we do. Passion and pride in design are what is at the heart of CARBN FORME.",
+        description: "CarbnForme is about creating ideas from the foundation and fundamentals that they have amassed throughout the years of combined experience makes us, and others, believe in what we do. Passion and pride in design are what is at the heart of CARBN FORME.",
         url: "https://carbnforme.vercel.app/",
         github_url: "",
         technology: ["React", "Next.js", "Prismic", "TailwindCSS"],
