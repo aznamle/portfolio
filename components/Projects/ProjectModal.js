@@ -6,12 +6,15 @@ import Loader from '../Loader'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {
-    Scrollbar
+    Scrollbar,
+    Pagination
   } from 'swiper';
 import 'swiper/css';
-import "swiper/css/scrollbar"
+import "swiper/css/scrollbar";
+import "swiper/css/pagination";
 
-SwiperCore.use([Scrollbar]);
+
+SwiperCore.use([Scrollbar, Pagination]);
 
 
 
@@ -49,7 +52,7 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                     leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                 >
                     <div className="inline-block mx-auto align-bottom bg-white dark:bg-gray-900 rounded-lg border border-gray-500 dark:border-gray-600 
-                        text-left overflow-hidden shadow-xl transform transition-all md:mt-12 overflow-y-auto w-auto md:max-w-4xl">
+                        text-left overflow-hidden shadow-xl transform transition-all md:mt-2 overflow-y-auto w-auto md:max-w-5xl">
                         <div className="bg-white dark:bg-gray-900 px-4 pb-4 ">
                         <div className='flex flex-row-reverse mt-2'>
                             <button className="text-gray-900 dark:text-gray-200 hover:text-gray-400 dark:hover:text-gray-500 transform ease-in-out duration-300" onClick={() => setOpen(false)}>
@@ -92,12 +95,11 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                         <div className="mt-2 h-5/6 border-t border-gray-300 dark:border-gray-600 ">
                             <Swiper
                                 spaceBetween={25}
-                                slidesPerView={1.25}
-                                centeredSlides={true}
+                                freeMode={true}
+                                slidesPerView={1.1}
                                 scrollbar={{
                                     "hide": true
                                   }}
-                                freeMode={true}
                             >
                                 {!images && <Loader />}
                                 {(images.map((image, index) =>
@@ -107,7 +109,7 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                                 ))}
                             </Swiper>
                         </div>
-                        <div className='w-3/4 py-4 space-y-4'>
+                        <div className='py-4 space-y-4'>
                             <p className="text-gray-700 dark:text-gray-300 text-xl">
                                 {item.description}
                             </p>

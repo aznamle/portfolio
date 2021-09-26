@@ -3,20 +3,20 @@ const projects = [
     {
         id: 1,
         icon: "CF",
-        title: "Carbnforme",
-        subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
-        description: "quis nostrud exercitation ullamco laboris nisi ut aliquip quis nostrud exercitation ullamco laboris nisi ut aliquip quis nostrud exercitation ullamco laboris nisi ut aliquip quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+        title: "CarbnForme",
+        subtitle: "Front-end website to promote CarbnForme designed products.",
+        description: "CarbnForme is about creating ideas from the foundation and fundamentals that we have amassed throughout our years of combined experience makes us, and others, believe in what we do. Passion and pride in design are what is at the heart of CARBN FORME.",
         url: "https://carbnforme.vercel.app/",
         github_url: "",
         technology: ["React", "Next.js", "Prismic", "TailwindCSS"],
-        images: ["/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme.jpg", "/projects/carbnforme/carbnforme.jpg", ]
+        images: ["/projects/carbnforme/carbnforme1.png", "/projects/carbnforme/carbnforme2.png", "/projects/carbnforme/carbnforme3.png", "/projects/carbnforme/carbnforme4.png", ]
     },
     {
         id: 2,
         title: "Brandcreative Inc.",
         icon: "BC",
-        subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
-        description: "des2",
+        subtitle: "Brandcreative Inc. front-end designed to inform clients about the marketing agency.",
+        description: "Brandcreative Inc. is a marketing agency with diverse range of skills needed to build a brand's voice beyond promotion. The team is built of strategists, designers, and digital sociologists. In harnessing the power and speed of technology, their goal is to exceed the needs of clients in situations that require creative solutions.",
         url: "https://brandcreativeinc.com/",
         github_url: "",
         technology: ["React", "Next.js", "Prismic", "TailwindCSS"],
