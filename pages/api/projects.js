@@ -25,25 +25,25 @@ const projects = [
     },
     {
         id: 3,
-        title: "title3",
-        icon: "P3",
-        subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
+        title: "Cryptoverse",
+        icon: "CV",
+        subtitle: "Dashboard displaying information about cryptocurrencies and the market",
         description: "des3",
         url: "",
         github_url: "",
-        technology: ["React", "TailwindCSS"],
+        technology: ["React", "Redux Toolkit", "Chart.js", "Antd", ],
         images: ["", ]
 
     },
     {
         id: 4,
-        title: "title4",
+        title: "Crown Store",
         icon: "P4",
-        subtitle: "quis nostrud exercitation ullamco laboris nisi ut aliquip",
-        description: "des4",
+        subtitle: "E-commerce app focusing on clothing apparel.",
+        description: "",
         url: "",
         github_url: "",
-        technology: ["React", "TailwindCSS"],
+        technology: ["React", "Redux", "Firebase", "Styled Components", ],
         images: ["", ]
     },
 ]

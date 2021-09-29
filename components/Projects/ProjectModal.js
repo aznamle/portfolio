@@ -16,6 +16,9 @@ import "swiper/css/pagination";
 
 SwiperCore.use([Scrollbar, Pagination]);
 
+import {
+    SiGithub,
+} from "react-icons/si";
 
 
 const ProjectModal = ({ open, setOpen, item, technology, images }) => {
@@ -109,14 +112,26 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                                 ))}
                             </Swiper>
                         </div>
-                        <div className='md:w-5/6 py-4 space-y-4'>
-                            <p className="text-gray-700 dark:text-gray-300 text-xl">
+                        <div className='md:flex md:w-5/6 py-4 space-y-4 space-x-2'>
+                            <p className="text-gray-700 dark:text-gray-300 text-md md:text-xl">
                                 {item.description}
                             </p>
+                        </div>
+                        <div className='space-x-2 mx-auto items-center'>
                             <button className='bg-gray-200 dark:bg-gray-700 transition ease-in-out duration-300 
-                                hover:bg-gray-400 dark:hover:bg-gray-800 py-2 px-16 rounded-2xl'
+                                hover:bg-gray-400 dark:hover:bg-gray-800 py-2 px-10 rounded-3xl'
                             >
-                                <a href={item.url} target="_blank" rel="noreferrer">Visit</a>
+                                <a className='text-md' href={item.url} target="_blank" rel="noreferrer">Visit</a>
+                            </button>
+                            <button className='bg-gray-200 dark:bg-gray-700 transition ease-in-out duration-300 
+                                hover:bg-gray-400 dark:hover:bg-gray-800 py-2 px-10 rounded-3xl' 
+                            >
+                                <a href={item.github_url} target="_blank" rel="noreferrer">
+                                    <div className='flex space-x-2 items-center'>
+                                        <span><SiGithub fontSize="15px" /></span>
+                                        <p className='text-md'>Github</p>
+                                    </div>
+                                </a>
                             </button>
                         </div>
 
