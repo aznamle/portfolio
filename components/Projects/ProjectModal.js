@@ -123,16 +123,6 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                             >
                                 <a className='text-md' href={item.url} target="_blank" rel="noreferrer">Visit</a>
                             </button>
-                            <button className='bg-gray-200 dark:bg-gray-700 transition ease-in-out duration-300 
-                                hover:bg-gray-400 dark:hover:bg-gray-800 py-2 px-10 rounded-3xl' 
-                            >
-                                <a href={item.github_url} target="_blank" rel="noreferrer">
-                                    <div className='flex space-x-2 items-center'>
-                                        <span><SiGithub fontSize="15px" /></span>
-                                        <p className='text-md'>Github</p>
-                                    </div>
-                                </a>
-                            </button>
                         </div>
 
                     </div>
