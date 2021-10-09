@@ -27,9 +27,9 @@ const projects = [
         id: 3,
         title: "Cryptoverse",
         icon: "CV",
-        subtitle: "Dashboard displaying information about cryptocurrencies and the market",
-        description: "des3",
-        url: "",
+        subtitle: "Dashboard showing information about cryptocurrencies.",
+        description: "Cryptoverse is an app that displays statistics, news, and trends about cryptocurrencies. It utilizes cryptocurrency API and Bing news API to show the latest stats and news.",
+        url: "https://cryptoverse-aznamle.vercel.app/",
         github_url: "",
         technology: ["React", "Redux Toolkit", "Chart.js", "Antd", ],
         images: ["", ]
@@ -40,8 +40,8 @@ const projects = [
         title: "Crown Store",
         icon: "P4",
         subtitle: "E-commerce app focusing on clothing apparel.",
-        description: "",
-        url: "",
+        description: "Crown Store is a e-commerce app utilizing Firebase as authenticated log-in and allows users to add clothing items to their cart and check out.",
+        url: "https://aznamle-crwn-live.herokuapp.com/",
         github_url: "",
         technology: ["React", "Redux", "Firebase", "Styled Components", ],
         images: ["", ]
