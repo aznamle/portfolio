@@ -5,7 +5,7 @@ const projects = [
         icon: "CF",
         title: "CarbnForme",
         subtitle: "Front-end website to promote CarbnForme designed products.",
-        description: "CarbnForme is about creating ideas from the foundation and fundamentals that they have amassed throughout the years of combined experience makes us, and others, believe in what we do. Passion and pride in design are what is at the heart of CARBN FORME.",
+        description: "CarbnForme is about creating ideas from the foundation and fundamentals that we have amassed throughout the years of combined experience makes us, and others, believe in what we do. Passion and pride in design are what is at the heart of CARBN FORME.",
         url: "https://carbnforme.vercel.app/",
         github_url: "",
         technology: ["React", "Next.js", "Prismic", "TailwindCSS"],
@@ -20,7 +20,7 @@ const projects = [
         url: "https://brandcreativeinc.com/",
         github_url: "",
         technology: ["React", "Next.js", "Prismic", "TailwindCSS"],
-        images: ["", ]
+        images: ["/projects/brandcreative/bc1.png", "/projects/brandcreative/bc2.png", "/projects/brandcreative/bc3.png", "/projects/brandcreative/bc4.png"]
 
     },
     {
@@ -32,7 +32,7 @@ const projects = [
         url: "https://cryptoverse-aznamle.vercel.app/",
         github_url: "",
         technology: ["React", "Redux Toolkit", "Chart.js", "Antd", ],
-        images: ["", ]
+        images: ["/projects/cryptoverse/cryptoverse1.png", "/projects/cryptoverse/cryptoverse2.png", "/projects/cryptoverse/cryptoverse3.png", "/projects/cryptoverse/cryptoverse4.png" ]
 
     },
     {
@@ -44,7 +44,7 @@ const projects = [
         url: "https://aznamle-crwn-live.herokuapp.com/",
         github_url: "",
         technology: ["React", "Redux", "Firebase", "Styled Components", ],
-        images: ["", ]
+        images: ["/projects/crwnstore/crwnstore1.png", "/projects/crwnstore/crwnstore2.png", "/projects/crwnstore/crwnstore3.png", "/projects/crwnstore/crwnstore4.png" ]
     },
 ]
 
