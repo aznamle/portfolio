@@ -54,7 +54,7 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                     leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                     leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                 >
-                    <div className="inline-block mx-auto align-bottom bg-white dark:bg-black rounded-lg border border-gray-500 dark:border-gray-600 
+                    <div className="inline-block mx-auto align-bottom bg-white dark:bg-gray-900 rounded-lg border border-gray-500 dark:border-gray-600 
                         text-left overflow-hidden shadow-xl transform transition-all md:mt-2 overflow-y-auto w-auto md:max-w-5xl">
                         <div className="bg-white dark:bg-gray-900 px-4 pb-4 ">
                         <div className='flex flex-row-reverse mt-2'>
