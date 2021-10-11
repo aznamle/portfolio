@@ -7,7 +7,7 @@ import Footer from './Footer'
 
 const Layout = ({ children }) => {
     return (
-        <div className='mx-auto bg-white dark:bg-black transition duration-500'>
+        <div className='mx-auto bg-white dark:bg-gray-900 transition duration-500'>
         <Head>
             <title>Nam Le</title>
             <meta name="description" content="Nam Le portfolio page" />
