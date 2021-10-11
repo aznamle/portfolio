@@ -38,7 +38,7 @@ const projects = [
     {
         id: 4,
         title: "Crown Store",
-        icon: "P4",
+        icon: "CS",
         subtitle: "E-commerce app focusing on clothing apparel.",
         description: "Crown Store is a e-commerce app utilizing Firebase as authenticated log-in and allows users to add clothing items to their cart and check out.",
         url: "https://aznamle-crwn-live.herokuapp.com/",
