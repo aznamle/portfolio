@@ -77,6 +77,7 @@ const ProjectModal = ({ open, setOpen, item, technology, images }) => {
                         </div>
                         <div className="flex items-start">
                             <div className="flex-shrink-0 flex items-center justify-center h-16 md:h-24 w-16 md:w-24 rounded-md bg-black dark:bg-white sm:mx-0 ">
+                                <p className='text-white dark:text-gray-900 text-4xl font-bold'>{item.icon}</p>
                             </div>
                             <div className="mt-1 ml-4 text-left">
                                 <Dialog.Title as="h3" className="text-2xl leading-6 font-bold text-gray-900 dark:text-white">
