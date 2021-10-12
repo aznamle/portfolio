@@ -15,11 +15,6 @@ const Intro = ({ about }) => {
 
     const socials = [
         {
-            title: "Twitter",
-            url: "https://twitter.com/aznamle",
-            icon: <SiTwitter fontSize='20px' />
-        },
-        {
             title: "LinkedIn",
             url: "https://www.linkedin.com/in/namle98/",
             icon: <SiLinkedin fontSize='20px' />
@@ -34,6 +29,11 @@ const Intro = ({ about }) => {
             url: "https://github.com/aznamle",
             icon: <AiOutlineFileText fontSize='20px' color='' />
         },
+        {
+            title: "Twitter",
+            url: "https://twitter.com/aznamle",
+            icon: <SiTwitter fontSize='20px' />
+        },
     ]
 
     return (
@@ -44,13 +44,13 @@ const Intro = ({ about }) => {
                 </div>
                 
                 <div className='space-y-2'>
-                    <h1 className='text-5xl font-semibold'>
+                    <h1 className='text-5xl font-bold'>
                         {about.name}
                     </h1>
                     <h1 className='text-xl text-gray-600 dark:text-gray-300'>
                         {about.location}
                     </h1>
-                    <p className='leading-relaxed tracking-normal text-xl md:text-2xl text-gray-900 dark:text-gray-100'>
+                    <p className='leading-relaxed tracking-normal whitespace-pre-line text-xl md:text-2xl text-gray-900 dark:text-gray-100'>
                         {about.description}
                     </p>
                 </div>
@@ -58,7 +58,7 @@ const Intro = ({ about }) => {
                 {socials.map((social,index) => (
                         <button key={index}
                             className='bg-gray-200 dark:bg-gray-700 transition ease-in-out duration-300 
-                                hover:bg-gray-400 dark:hover:bg-gray-800 py-2 px-5 rounded-3xl' 
+                                hover:bg-gray-400 dark:hover:bg-gray-800 py-2 px-4 md:px-6 rounded-3xl' 
                             >
                                 <a href={social.url} target="_blank" rel="noreferrer">
                                     <div className='flex space-x-2 items-center'>

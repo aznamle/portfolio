@@ -5,7 +5,7 @@ const about = [
         image: "",
         role: "Software Developer",
         location: "Rancho Cucamonga, California",
-        description: "I am a front-end developer focusing on Javascript ES6+! My stack includes React, NextJS, Prisma and Prismic.",
+        description: "I am a front-end developer focusing on Javascript ES6+! My stack includes React, NextJS, Prisma and Prismic.\n\n In my free time, I am a gamer, sports fan, and anime fan!",
         email : "namle1998@hotmail.com",
         social: [
             {

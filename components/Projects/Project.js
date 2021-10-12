@@ -18,7 +18,7 @@ const Project = ({ project }) => {
     return (
         <div className='mx-auto max-w-5xl space-y-2 px-4 md:px-0 py-12'>
             <h1 className='text-gray-900 dark:text-gray-100 text-3xl font-bold'>Projects</h1>
-            <p className='text-gray-700 dark:text-gray-400 text-xl font-light pb-10'>Here are some of my projects that I have worked on. Feel free to check them out.</p>
+            <p className='text-gray-700 dark:text-gray-400 text-xl pb-6'>Here are some of my projects that I have worked on. Feel free to check them out.</p>
             <div className='mx-auto grid md:grid-cols-2 gap-10 px-2 md:px-0 text-gray-900 dark:text-white'>
                 {project.map(item => (
                     <div className='flex items-center text-left mx-auto justify-center space-x-4' key={item.id}>

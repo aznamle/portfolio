@@ -53,7 +53,7 @@ const Skills = ({ }) => {
     return (
         <div className='mx-auto max-w-5xl space-y-4 px-4 md:px-0 py-4'>
             <h1 className='text-gray-900 dark:text-gray-100 text-3xl font-bold'>Skills</h1>
-            
+            <p className='text-gray-700 dark:text-gray-400 text-xl pb-6'>I enjoy learning about about cutting-edge technologies. These are some of the tools I enjoy using to build applications.</p>
             <div className='max-w-2xl grid grid-cols-2 md:grid-cols-3 gap-2'>
                 {skills.map((tech,index) => (
                     <div key={index} className='flex space-x-4 items-center border border-gray-300 border-opacity-75 dark:border-gray-600 rounded-md'>
