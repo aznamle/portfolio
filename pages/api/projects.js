@@ -1,7 +1,17 @@
 const projects = [
-
     {
         id: 1,
+        icon: "AS",
+        title: "AniSen",
+        subtitle: "AniList clone that allows live search and filtering",
+        description: "AniSen is an anime database app that allows users to view top rated anime shows and search from thousands of existing titles.",
+        url: "https://senanilist.vercel.app/",
+        github_url: "https://github.com/aznamle/AnimeList",
+        technology: ["React", "Redux ToolKit", "React-Router", "TailwindCSS"],
+        images: ["/projects/", "/projects/", "/projects/", "/projects/", ]
+    },
+    {
+        id: 2,
         icon: "CF",
         title: "CarbnForme",
         subtitle: "Front-end website to promote CarbnForme designed products.",
@@ -12,7 +22,7 @@ const projects = [
         images: ["/projects/carbnforme/carbnforme1.png", "/projects/carbnforme/carbnforme2.png", "/projects/carbnforme/carbnforme3.png", "/projects/carbnforme/carbnforme4.png", ]
     },
     {
-        id: 2,
+        id: 3,
         title: "Brandcreative Inc.",
         icon: "BC",
         subtitle: "Brandcreative Inc. front-end designed to inform clients about the marketing agency.",
@@ -24,7 +34,7 @@ const projects = [
 
     },
     {
-        id: 3,
+        id: 4,
         title: "Cryptoverse",
         icon: "CV",
         subtitle: "Dashboard showing information about cryptocurrencies.",
@@ -36,7 +46,7 @@ const projects = [
 
     },
     {
-        id: 4,
+        id: 5,
         title: "Crown Store",
         icon: "CS",
         subtitle: "E-commerce app focusing on clothing apparel.",
