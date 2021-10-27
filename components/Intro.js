@@ -26,7 +26,7 @@ const Intro = ({ about }) => {
         },
         {
             title: "Resume",
-            url: "https://github.com/aznamle",
+            url: "/resume.pdf",
             icon: <AiOutlineFileText fontSize='20px' color='' />
         },
     ]
