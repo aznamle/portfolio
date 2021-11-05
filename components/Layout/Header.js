@@ -41,9 +41,6 @@ const Header = () => {
                   <a className="text-2xl font-bold">Nam Le</a>
                 </Link>
                 <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center space-x-2">
-                {/* <Link className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300" href="#skills"><a>Skills</a></Link>
-                <Link className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300" href="#projects"><a>Projects</a></Link>
-                <Link className="hover:text-gray-500 dark:hover:text-gray-700 transition duration-300" href="#experience"><a>Experience</a></Link> */}
                   <div className='bg-gray-200 dark:bg-gray-700 p-3 rounded-full transition duration-100'>
                     {toggleDarkMode()}
                   </div>
