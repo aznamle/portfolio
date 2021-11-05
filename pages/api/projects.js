@@ -8,7 +8,7 @@ const projects = [
         url: "https://senanilist.vercel.app/",
         github_url: "https://github.com/aznamle/AnimeList",
         technology: ["React", "Redux ToolKit", "React-Router", "TailwindCSS"],
-        images: ["/projects/", "/projects/", "/projects/", "/projects/", ]
+        images: ["/projects/senanilist/senanilist1.png", "/projects/senanilist/senanilist2.png", "/projects/senanilist/senanilist3.png", ]
     },
     {
         id: 2,
