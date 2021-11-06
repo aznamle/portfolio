@@ -3,7 +3,7 @@
     <p>This is my portfolio featuring my skills, projects, and background! Please check it out!</p>
 </div>
 
-![demo](./public/cryptoverse1.png)
+![demo](./public/portfolio1.png)
 
 ## Run it on your machine
 
