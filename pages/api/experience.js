@@ -3,7 +3,7 @@ const experience = [
         id: 1,
         title: "Junior Web Developer",
         subtitle: "Brandcreative Inc.",
-        time: "April 2019 - Present",
+        time: "April 2019 - November 2021",
         location: "Ontario, California",
         description: ""
     },
