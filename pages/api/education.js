@@ -1,7 +1,7 @@
 const education = [
     {
         id: 1,
-        title: "Cal Poly Pomona",
+        title: "California State Polytechnic University, Pomona",
         subtitle: "Computer Information Systems, Applications Development",
         time: "2016-2021",
         location: "Pomona, California",
