@@ -1,15 +1,18 @@
 import NavBar from '@/components/NavBar'
 import './globals.css'
-import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Footer from '@/components/Footer'
+import { Metadata } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Nam Le',
-  description: 'Nam Le Portfolio',
-}
+  title: "Nam Le's Portfolio",
+  description: "Nam Le Portfolio",
+  icons: {
+    icon: "/favicon.svg"
+  }
+};
 
 export default function RootLayout({
   children,

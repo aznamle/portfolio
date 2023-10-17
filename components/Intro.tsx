@@ -10,6 +10,10 @@ import {
     AiOutlineFileText
 } from 'react-icons/ai';
 
+import {
+    FaLocationDot
+} from 'react-icons/fa6';
+
 const Intro = () => {
 
     const socials = [
@@ -40,7 +44,7 @@ const Intro = () => {
                 <h1 className='text-5xl font-bold'>
                     Hello, I'm Nam! 👋
                 </h1>
-                <h1 className='text-xl text-gray-600'>
+                <h1 className='text-xl text-gray-600 flex items-center'>
                     Rancho Cucamonga, California ☀️
                 </h1>
                 <p className='leading-relaxed tracking-normal whitespace-pre-line text-xl text-gray-900'>
