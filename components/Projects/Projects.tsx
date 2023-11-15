@@ -35,11 +35,11 @@ const Projects: React.FC = () => {
       icon: "LG",
       title: "Lingosta",
       subtitle: "Language learning app that uses AI to translate sentences",
-      description: "Lingosta is an langauge learning app that uses AI functionality to translate sentences seamlessly into flashcards from 9 different langauges.",
+      description: "Lingosta is an language learning app that uses AI functionality to translate sentences seamlessly into flashcards from 9 different langauges. Lingosta placed 3rd in the Appwrite x Hashnode Hackathon 2023.",
       url: "https://www.lingosta.app/",
       github_url: "https://github.com/leejustin/lingosta",
       technology: ["Next.js", "Typescript", "Appwrite Cloud", "OpenAI API"],
-      images: ["/projects/lingosta/lingosta1.png", "/projects/lingosta/lingosta2.png", "/projects/lingosta/lingosta3.png", "/projects/lingosta/lingosta4.png", "/projects/lingosta/lingosta5.png" ]
+      images: ["/projects/lingosta/lingosta1.png", "/projects/lingosta/lingosta2.png", "/projects/lingosta/lingosta3.png", "/projects/lingosta/lingosta4.png", "/projects/lingosta/lingosta5.png", "/projects/lingosta/lingosta6.png" ]
   },
     {
         id: 2,

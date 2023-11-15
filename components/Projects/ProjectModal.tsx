@@ -9,7 +9,7 @@ import 'swiper/css/free-mode';
 
 import { Scrollbar, FreeMode } from 'swiper/modules';
 
-interface Project {
+type Project = {
   id: number;
   icon: string;
   title: string;
@@ -19,15 +19,15 @@ interface Project {
   github_url: string;
   technology: string[];
   images: string[];
-}
+};
 
-interface ProjectModalProps {
+type ProjectModalProps = {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
   item: Project | null;
   technology: string[];
   images: string[];
-}
+};
 
 const ProjectModal: React.FC<ProjectModalProps> = ({ open, setOpen, item, technology, images }) => {
   const cancelButtonRef = useRef(null);
